@@ -27,6 +27,7 @@
         </v-list-tile-content>
       </v-list-tile>
     </v-list>
+    <v-btn class="text-changer" @click='changeLanguage()'>Change Language</v-btn>
   </v-navigation-drawer>
 </template>
 
@@ -56,7 +57,8 @@
           { title: 'About', icon: 'question_answer', path: '/#about', id:'about' }
         ],
         activeItem: null,
-        right: true
+        right: true,
+        lang: 'en',
       }
     },
     created() {
@@ -67,6 +69,14 @@
       document.removeEventListener('scroll', this.handleScroll);
     },
     methods: {
+      changeLanguage() {
+        if (this.lang === 'en') {
+          this.lang = 'fr'
+        } else if (this.lang === 'fr') {
+          this.lang = 'en'
+        }
+        this.$emit('currentLanguage', this.lang)
+      },
       pushRoute(path) {
         this.$router.push({ path: path })
       },

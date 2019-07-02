@@ -1,9 +1,9 @@
 <template>
   <v-app>
-    <Sidebar />
+    <Sidebar v-on:currentLanguage='currentLanguage'/>
     <transition name="fade" appear>
       <main class="offset-width">
-        <slot />
+        <slot v-bind:lang='lang'></slot>
       </main>
     </transition>
   </v-app>
@@ -15,6 +15,14 @@
     name: 'Default',
     components: {
       Sidebar,
+    },
+    data: () => ({
+      lang: 'en'
+    }),
+    methods: {
+      currentLanguage(lang) {
+        this.lang = lang
+      }
     }
   }
 </script>

@@ -13,7 +13,7 @@
 
         <!-- List posts -->
     <div class="posts">
-      <ProjectCard v-for="edge in $static.projects.edges" :key="edge.node.id" :project="edge.node"/>
+      <ProjectCard v-for="project in projects" :key="project.node.id" :project="project.node"/>
     </div>
   </div>
 </template>
@@ -24,8 +24,17 @@
     components: {
       ProjectCard
     },
+    props: ['lang'],
+    data: () => ({
+      projects: null,
+    }),
+    watch: {
+      lang() {
+        this.projects = this.$static.projects.edges.filter(e => e.node.tags[0].id === this.lang)
+      }
+    },
     mounted() {
-      console.log(this.$static)
+      this.projects = this.$static.projects.edges.filter(e => e.node.tags[0].id === this.lang)
     }
   }
 </script>
@@ -40,8 +49,6 @@ query {
         path
         tags {
           id
-          title
-          path
         }
         date (format: "D. MMMM YYYY")
         timeToRead

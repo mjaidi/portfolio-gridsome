@@ -1,0 +1,48 @@
+#sidebar {
+  background: $dark;
+  color: white;
+  .isActive {
+    color: $yellow;
+    background: lighten($dark, 10%)
+  }
+  .title {
+    font-weight: bold;
+    margin-bottom: 4rem;
+    font-size: 1rem;
+  }
+  .menu {
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    .subtitle {
+      margin-top: 0.5rem;
+      font-size: 1rem;
+    }
+    i {
+      font-size: 1.75rem;
+    }
+  }
+  .avatar-wrapper {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    .avatar {
+      width: 60%;
+      border-radius: 0.5rem;
+    }
+  }
+  .language-changer {
+    position: fixed;
+    bottom: 2%;
+    width: 70%;
+    left: 15%;
+    .v-list__tile__title {
+      color: black;
+    }
+  }
+}

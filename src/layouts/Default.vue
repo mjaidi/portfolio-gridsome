@@ -29,7 +29,7 @@
 
 <style>
   .offset-width {
-    margin-left: 200px;
+    margin-left: 220px;
   }
   .fade-enter-active {
   transition: opacity .5s;

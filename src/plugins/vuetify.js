@@ -1,6 +1,13 @@
 import Vue from 'vue'
 import Vuetify from 'vuetify'
-import 'vuetify/dist/vuetify.min.css' // Ensure you are using css-loader
+import '../stylus/main.styl'
 
-
-Vue.use(Vuetify)
+Vue.use(Vuetify, {
+  theme: {
+    primary: '#20939B',
+    success: '#41962e',
+    warning: '#F4863D',
+    danger: '#E53522',
+    yellow: '#E5BE24'
+  }
+})

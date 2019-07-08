@@ -1,8 +1,9 @@
 <template>
   <v-app>
-    <Sidebar v-on:currentLanguage='currentLanguage'/>
+    <Sidebar v-on:currentLanguage='currentLanguage' v-if='!isMobile'/>
+    <MobileMenu v-on:currentLanguage='currentLanguage' v-if='isMobile'/>
     <transition name="fade" appear>
-      <main class="offset-width">
+      <main :class="{offsetWidth: !isMobile}">
         <slot v-bind:lang='lang'></slot>
       </main>
     </transition>
@@ -11,15 +12,28 @@
 
 <script>
   import Sidebar from './navigation/Sidebar'
+  import MobileMenu from './navigation/MobileMenu'
   export default {
     name: 'Default',
     components: {
       Sidebar,
+      MobileMenu,
     },
     data: () => ({
-      lang: 'en'
+      lang: 'en',
+      isMobile: false,
     }),
+    created() {
+      window.addEventListener('resise', this.handleResize)
+      this.handleResize()
+    },
+    destroyed() {
+      this.removeEventListener('resize', this.handleResize)
+    },
     methods: {
+      handleResize() {
+        window.innerWidth < 1000 ? this.isMobile = true : this.isMobile = false
+      },
       currentLanguage(lang) {
         this.lang = lang
       }
@@ -28,7 +42,7 @@
 </script>
 
 <style>
-  .offset-width {
+  .offsetWidth {
     margin-left: 220px;
   }
   .fade-enter-active {

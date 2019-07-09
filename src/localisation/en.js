@@ -7,6 +7,7 @@ export default {
   },
   home: {
     title: 'Home Page',
-    name: 'This is the home page'
+    sub1: 'I am a Web Developer',
+    sub2: 'I am a Freelancer'
   }
 }

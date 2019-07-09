@@ -7,6 +7,8 @@ export default {
   },
   home: {
     title: 'Page Acceuil',
-    name: "Ceci est la page d'acceuil"
+    sub_start: 'Je suis un',
+    sub1: 'Je suis un Dévelopeur Web',
+    sub2: 'Je suis un Freelancer'
   }
 }

@@ -19,10 +19,13 @@
 </template>
 
 <script>
+  import { VueTyper } from 'vue-typer'
+
   import ProjectCard from './ProjectCard'
   export default {
     components: {
-      ProjectCard
+      ProjectCard,
+      VueTyper
     },
     props: ['lang'],
     data: () => ({

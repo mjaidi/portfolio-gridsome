@@ -34,7 +34,7 @@
               <p class='subtitle'>{{ staticText.sidebar[item.title] }}</p>
             </div>
             <br><br>
-          <v-select class="language-changer" color='white' solo dark :items='languages' v-model='lang' @click='changeLanguage()' item-text='title' item-value='value' prepend-icon="map"></v-select>
+          <v-select class="language-changer" color='white' solo dark :items='languages' v-model='lang' @change='changeLanguage()' item-text='title' item-value='value' prepend-icon="map"></v-select>
       </v-menu>
     </div>
   </div>

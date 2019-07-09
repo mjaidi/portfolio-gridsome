@@ -1,0 +1,17 @@
+#home {
+  background: linear-gradient(0deg, rgba(51, 51, 51, 0.7), rgba(51, 51, 51, 0.7)), url('../../static/images/bin.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  .profile-photo {
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+    border: 1rem solid $yellow;
+    object-fit: cover;
+  }
+}

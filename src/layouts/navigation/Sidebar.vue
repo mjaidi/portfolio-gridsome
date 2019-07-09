@@ -19,7 +19,7 @@
         <i :class='`fas ${ item.icon }`'></i>
         <p class='subtitle'>{{ staticText.sidebar[item.title] }}</p>
       </div>
-    <v-select class="language-changer" color='white' solo dark :items='languages' v-model='lang' @click='changeLanguage()' item-text='title' item-value='value' prepend-icon="map"></v-select>
+    <v-select class="language-changer" color='white' solo dark :items='languages' v-model='lang' @change='changeLanguage()' item-text='title' item-value='value' prepend-icon="map"></v-select>
   </v-navigation-drawer>
 </template>
 

@@ -1,25 +1,27 @@
 <template>
   <v-navigation-drawer permanent fixed width="220" id='sidebar'>
-    <div>
-      <div class='avatar-wrapper'>
-        <img src="../../../static/images/myAvatar.png" class='avatar' alt="">
+    <div class='relative-sidebar'>
+      <div>
+        <div class='avatar-wrapper'>
+          <img src="../../../static/images/myAvatar.png" class='avatar' alt="">
+        </div>
+        <h4 class="title text-center">
+          Majid Jaidi
+        </h4>
       </div>
-      <h4 class="title text-center">
-        Majid Jaidi
-      </h4>
-    </div>
 
-    <v-divider></v-divider>
-      <div
-        v-for="item in items"
-        :key="item.id"
-        @click='pushRoute(item.path)'
-        :class="{isActive: item === activeItem, menu: true}"
-      >
-        <i :class='`fas ${ item.icon }`'></i>
-        <p class='subtitle'>{{ staticText.sidebar[item.title] }}</p>
-      </div>
-    <v-select class="language-changer" color='white' solo dark :items='languages' v-model='lang' @change='changeLanguage()' item-text='title' item-value='value' prepend-icon="map"></v-select>
+      <v-divider></v-divider>
+        <div
+          v-for="item in items"
+          :key="item.id"
+          @click='pushRoute(item.path)'
+          :class="{isActive: item === activeItem, menu: true}"
+        >
+          <i :class='`fas ${ item.icon }`'></i>
+          <p class='subtitle'>{{ staticText.sidebar[item.title] }}</p>
+        </div>
+      <v-select class="language-changer" color='white' solo dark :items='languages' v-model='lang' @change='changeLanguage()' item-text='title' item-value='value' prepend-icon="map"></v-select>
+    </div>
   </v-navigation-drawer>
 </template>
 

@@ -8,6 +8,18 @@
     align-items: center;
   }
 
+  .flex-column {
+    flex-direction: column;
+  }
+
+  .text-left {
+    text-align: left;
+  }
+
+  .w-100 {
+    width: 100%;
+  }
+
   .text-center {
     text-align: center;
   }
@@ -66,3 +78,23 @@
     position: absolute;
     top: 5rem;
   }
+
+
+@media only screen and (max-width: 900px) {
+  .before-title {
+    &:before {
+      content: none;
+    }
+  }
+
+  .vertical-title {
+    &:before {
+      content: none;
+    }
+  }
+  .after-title {
+    &:before {
+      content: none;
+    }
+  }
+}

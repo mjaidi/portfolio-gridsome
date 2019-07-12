@@ -1,6 +1,11 @@
 #sidebar {
   background: $dark;
   color: white;
+  .relative-sidebar {
+    position: relative;
+    min-height: 90vh;
+    padding-bottom: 20rem;
+  }
   .isActive {
     color: $yellow;
     background: lighten($dark, 10%)
@@ -37,7 +42,7 @@
     }
   }
   .language-changer {
-    position: fixed;
+    position: absolute;
     bottom: 2%;
     width: 70%;
     left: 15%;

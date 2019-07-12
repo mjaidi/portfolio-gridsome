@@ -22,10 +22,21 @@
     font-size: 2rem;
     padding-bottom: 0;
     margin-bottom: 0;
-    .typed {
-      text-align: center;
-      color: white;
-      font-size: 2rem;
+  }
+}
+
+
+@media only screen and (max-width: 900px) {
+  #home {
+    .profile-photo {
+      height: 12rem;
+      width: 12rem;
+    }
+    .profile-title {
+      font-size: 2.2rem
+    }
+    .profile-subtitle {
+      font-size: 1.3rem;
     }
   }
 }

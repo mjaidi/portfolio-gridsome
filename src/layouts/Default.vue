@@ -4,7 +4,7 @@
     <MobileMenu v-on:currentLanguage='currentLanguage' v-if='isMobile'/>
     <transition name="fade" appear>
       <main :class="{offsetWidth: !isMobile}">
-        <slot v-bind:lang='lang'></slot>
+        <slot v-bind:lang='lang' ></slot>
       </main>
     </transition>
   </v-app>

@@ -45,18 +45,11 @@
   import fr from '../../localisation/fr.js'
   import en from '../../localisation/en.js'
   function elementInViewport(el) {
-    let top = el.offsetTop;
-    let height = el.offsetHeight;
-
-    while(el.offsetParent) {
-      el = el.offsetParent;
-      top += el.offsetTop;
+    let bounding = el.getBoundingClientRect();
+    if ( bounding.top >= 0 && bounding.top < window.innerHeight - window.innerHeight * 0.5) {
+      return true
     }
-
-    return (
-      top >= window.pageYOffset &&
-      (top + height) <= (window.pageYOffset + window.innerHeight)
-    );
+    return false
   }
 
   export default {
@@ -66,8 +59,8 @@
         items: [
           { title: 'home', icon: 'fa-home', path: '/#home', id:'home' },
           { title: 'me', icon: 'fa-user-circle', path: '/#about', id:'about' },
-          { title: 'portfolio', icon: 'fa-suitcase', path: '/#about', id:'about' },
-          { title: 'contact', icon: 'fa-envelope', path: '/#about', id:'about' }
+          { title: 'portfolio', icon: 'fa-suitcase', path: '/#projects', id:'projects' },
+          { title: 'contact', icon: 'fa-envelope', path: '/#contact', id:'contact' }
         ],
         languages: [{title: 'Français', value: 'fr'}, {title: 'English', value: 'en'}],
         activeItem: null,

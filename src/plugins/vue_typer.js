@@ -1,4 +1,4 @@
 import Vue from 'vue'
-import VueTyperPlugin from 'vue-typer'
+import VueTypedJs from 'vue-typed-js'
 
-Vue.use(VueTyperPlugin)
+Vue.use(VueTypedJs)

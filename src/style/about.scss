@@ -87,7 +87,143 @@
   }
   .about-section2 {
     margin: 5rem 0;
+    padding: 5rem 0;
     min-height: 60vh;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../../static/images/b4.jpg');
+    .header-wrapper {
+      font-size: 2.5rem;
+      color: $yellow;
+      h2 {
+        line-height: 0.5;
+        margin-bottom: 3rem;
+      }
+      .header-title {
+        font-size: 1.7rem;
+        color: white;
+        border-bottom: 4px solid $yellow;
+      }
+      .margin-bottom-0 {
+        margin-bottom: 0.5rem;
+      }
+    }
+    .info-wrapper {
+      margin: 2rem 2rem 2rem 0rem;
+      color: white;
+      font-size: 1.4rem;
+      .info-title {
+        margin: 2rem 0 0 0;
+        font-weight: bold;
+      }
+      .info-content {
+        font-size: 1.2rem;
+        font-weight: lighter;
+        white-space: pre-wrap;
+      }
+    }
+    .container-min-padding {
+      padding: 0 1.5rem 0 0 ;
+    }
+    .skills-wrapper {
+      color: white;
+      font-size: 1.4rem;
+      padding-right: 1.5rem;
+      .skills-title {
+        margin: 2rem 0 0 0;
+        font-weight: bold;
+      }
+    }
+  }
+
+  @-webkit-keyframes progress-bar-stripes {
+    from {
+      background-position: 1rem 0;
+    }
+    to {
+      background-position: 0 0;
+    }
+  }
+
+  @keyframes progress-bar-stripes {
+    from {
+      background-position: 1rem 0;
+    }
+    to {
+      background-position: 0 0;
+    }
+  }
+  .progress {
+    display: -ms-flexbox;
+    display: flex;
+    height: 1rem;
+    overflow: hidden;
+    font-size: 0.75rem;
+    background-color: #e9ecef;
+    border-radius: 0.25rem;
+  }
+
+  .progress-bar {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    background-color: $yellow;
+    transition: width 0.6s ease;
+  }
+
+  .progress-bar-animated {
+    -webkit-animation: progress-bar-stripes 1s linear infinite;
+    animation: progress-bar-stripes 1s linear infinite;
+  }
+
+  .with-border {
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 0.5rem;
+    color: transparent;
+  }
+  .left-border {
+    border-radius: 20px 0 0 20px;
+  }
+
+  .right-border {
+    border-radius: 20px;
+  }
+
+}
+
+@media only screen and (max-width: 900px) {
+  #about .about-section1 .about-image {
+    margin: 3rem 2rem;
+  }
+  #about .about-section1 .about-text {
+    margin: 3rem 1rem;
+    font-size: 1rem;
+  }
+  #about .about-section1 .description-wrapper {
+    padding: 1rem;
+    font-size: 1.1rem;
+  }
+  #about .about-section1 .description-wrapper .description-title{
+    width: 40%;
+  }
+  #about .about-section1 .description-wrapper .description-text{
+    width: 60%;
+  }
+  #about .about-section1 .button-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+  }
+  #about .about-section1 .btn {
+    margin-bottom: 1rem;
+  }
+  #about .about-section1 .cv-btn {
+    margin: 0;
   }
 }

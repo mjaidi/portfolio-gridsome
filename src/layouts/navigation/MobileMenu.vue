@@ -10,9 +10,11 @@
     </div>
     <div>
       <v-menu
-        :close-on-content-click='false'
+        :close-on-content-click="false"
         transition="slide-x-transition"
         fixed
+        top
+        v-model='active'
       >
         <template v-slot:activator="{ on }">
           <v-btn
@@ -66,6 +68,7 @@
         activeItem: null,
         right: true,
         lang: 'en',
+        active: false,
       }
     },
     computed: {
@@ -86,6 +89,7 @@
         this.$emit('currentLanguage', this.lang)
       },
       pushRoute(path) {
+        this.active = false
         this.$router.push({ path: path })
       },
       handleScroll() {
@@ -99,3 +103,9 @@
     }
   }
 </script>
+
+<style>
+  #mobile-menu {
+    z-index: 2000;
+  }
+</style>

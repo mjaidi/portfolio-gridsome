@@ -34,7 +34,88 @@
     </div>
 
     <div class="about-section2">
-
+      <v-container>
+        <v-layout wrap >
+          <v-flex xs12 md4>
+            <div class="header-wrapper">
+              <i class="fas fa-graduation-cap"></i>
+              <h2> <span class='header-title'>{{staticText.about.education}}</span></h2>
+            </div>
+            <div class="info-wrapper">
+              <h4 class="info-title">{{staticText.about.wagonTitle}}</h4>
+              <h4 class="info-content">{{staticText.about.wagonContent}}</h4>
+              <h4 class="info-title">{{staticText.about.epflTitle}}</h4>
+              <h4 class="info-content">{{staticText.about.epflContent}}</h4>
+              <h4 class="info-title">{{staticText.about.hopkinsTitle}}</h4>
+              <h4 class="info-content">{{staticText.about.hopkinsContent}}</h4>
+            </div>
+          </v-flex>
+          <v-flex xs12 md5>
+            <div class="header-wrapper">
+              <i class="fas fa-suitcase"></i>
+              <h2> <span class='header-title'>{{staticText.about.experience}}</span></h2>
+            </div>
+            <div class="info-wrapper">
+              <h4 class="info-title">{{staticText.about.freelanceTitle}}</h4>
+              <h4 class="info-content">{{staticText.about.freelanceContent}}</h4>
+              <h4 class="info-title">{{staticText.about.patibisTitle}}</h4>
+              <h4 class="info-content">{{staticText.about.patibisContent}}</h4>
+              <h4 class="info-title">{{staticText.about.pwcTitle}}</h4>
+              <h4 class="info-content">{{staticText.about.pwcContent}}</h4>
+            </div>
+          </v-flex>
+          <v-flex xs12 md3>
+            <div class="header-wrapper">
+              <i class="fas fa-code"></i>
+              <h2 class='margin-bottom-0'> <span class='header-title'>{{staticText.about.skills}}</span></h2>
+              <v-container fluid class='container-min-padding'>
+                <v-layout wrap >
+                  <v-flex xs6 class='skills-wrapper'>
+                    <h4 class="skills-title">Ruby</h4>
+                    <div class='with-border'><div :class="{'progress-bar': true, 'progress-bar-animated': true, 'left-border': true, 'right-border': completionRate(80)}" role="progressbar" v-bind:style="{ width: 80 + '%' }" aria-valuenow='80' aria-valuemin="0" aria-valuemax="100">.</div></div>
+                  </v-flex>
+                  <v-flex xs6 class='skills-wrapper'>
+                    <h4 class="skills-title">Rails</h4>
+                    <div class='with-border'><div :class="{'progress-bar': true, 'progress-bar-animated': true, 'left-border': true, 'right-border': completionRate(90)}" role="progressbar" v-bind:style="{ width: 90 + '%' }" aria-valuenow='90' aria-valuemin="0" aria-valuemax="100">.</div></div>
+                  </v-flex>
+                  <v-flex xs6 class='skills-wrapper'>
+                    <h4 class="skills-title">Vue.js</h4>
+                    <div class='with-border'><div :class="{'progress-bar': true, 'progress-bar-animated': true, 'left-border': true, 'right-border': completionRate(80)}" role="progressbar" v-bind:style="{ width: 80 + '%' }" aria-valuenow='80' aria-valuemin="0" aria-valuemax="100">.</div></div>
+                  </v-flex>
+                  <v-flex xs6 class='skills-wrapper'>
+                    <h4 class="skills-title">React.js</h4>
+                    <div class='with-border'><div :class="{'progress-bar': true, 'progress-bar-animated': true, 'left-border': true, 'right-border': completionRate(50)}" role="progressbar" v-bind:style="{ width: 50 + '%' }" aria-valuenow='50' aria-valuemin="0" aria-valuemax="100">.</div></div>
+                  </v-flex>
+                  <v-flex xs6 class='skills-wrapper'>
+                    <h4 class="skills-title">AWS</h4>
+                    <div class='with-border'><div :class="{'progress-bar': true, 'progress-bar-animated': true, 'left-border': true, 'right-border': completionRate(30)}" role="progressbar" v-bind:style="{ width: 30 + '%' }" aria-valuenow='30' aria-valuemin="0" aria-valuemax="100">.</div></div>
+                  </v-flex>
+                  <v-flex xs6 class='skills-wrapper'>
+                    <h4 class="skills-title">Heroku</h4>
+                    <div class='with-border'><div :class="{'progress-bar': true, 'progress-bar-animated': true, 'left-border': true, 'right-border': completionRate(70)}" role="progressbar" v-bind:style="{ width: 70 + '%' }" aria-valuenow='70' aria-valuemin="0" aria-valuemax="100">.</div></div>
+                  </v-flex>
+                  <v-flex xs6 class='skills-wrapper'>
+                    <h4 class="skills-title">Filemaker</h4>
+                    <div class='with-border'><div :class="{'progress-bar': true, 'progress-bar-animated': true, 'left-border': true, 'right-border': completionRate(90)}" role="progressbar" v-bind:style="{ width: 90 + '%' }" aria-valuenow='90' aria-valuemin="0" aria-valuemax="100">.</div></div>
+                  </v-flex>
+                  <v-flex xs6 class='skills-wrapper'>
+                    <h4 class="skills-title">Javascript</h4>
+                    <div class='with-border'><div :class="{'progress-bar': true, 'progress-bar-animated': true, 'left-border': true, 'right-border': completionRate(85)}" role="progressbar" v-bind:style="{ width: 85 + '%' }" aria-valuenow='85' aria-valuemin="0" aria-valuemax="100">.</div></div>
+                  </v-flex>
+                  <v-flex xs6 class='skills-wrapper'>
+                    <h4 class="skills-title">HTML</h4>
+                    <div class='with-border'><div :class="{'progress-bar': true, 'progress-bar-animated': true, 'left-border': true, 'right-border': completionRate(85)}" role="progressbar" v-bind:style="{ width: 85 + '%' }" aria-valuenow='85' aria-valuemin="0" aria-valuemax="100">.</div></div>
+                  </v-flex>
+                  <v-flex xs6 class='skills-wrapper'>
+                    <h4 class="skills-title">CSS</h4>
+                    <div class='with-border'><div :class="{'progress-bar': true, 'progress-bar-animated': true, 'left-border': true, 'right-border': completionRate(85)}" role="progressbar" v-bind:style="{ width: 85 + '%' }" aria-valuenow='85' aria-valuemin="0" aria-valuemax="100">.</div></div>
+                  </v-flex>
+                </v-layout>
+              </v-container>
+            </div>
+          </v-flex>
+        </v-layout>
+      </v-container>
     </div>
 
   </div>
@@ -63,5 +144,10 @@
         return age;
       }
     },
+    methods: {
+      completionRate(value) {
+        return value > 95
+      },
+    }
   }
 </script>

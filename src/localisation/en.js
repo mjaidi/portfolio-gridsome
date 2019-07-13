@@ -20,8 +20,25 @@ export default {
     email: 'Email',
     phone: 'Phone',
     contact: 'Contact me',
-    cv: 'Download CV'
-
+    cv: 'Download CV',
+    education: 'My Education',
+    experience: 'My Experience',
+    skills: 'My Skills',
+    wagonTitle: 'Le Wagon Coding Bootcamp',
+    epflTitle: 'Ecole Polytechnique Fédérale Lausanne (EPFL)',
+    hopkinsTitle: 'Johns Hopkins University',
+    freelanceTitle: 'Freelance Web Developement',
+    patibisTitle: 'Patibis SARL',
+    pwcTitle: 'Strategy & (formerly Booz & Company)',
+    wagonContent: `Ruby on Rails, HTML, CSS, Javascript`,
+    epflContent: `Masters in Civil Engineering \nMinor in Business and Enterpreneurship`,
+    hopkinsContent: `Bachelors in Civil Engineering`,
+    freelanceContent: `Subscription management platform for TV Show
+Management software for Insurance Broker
+Platform for Art Gallery Management
+Corporate and personal websites`,
+    patibisContent: `Building Custom ERP with Filemaker for Pastry Business`,
+    pwcContent: `Business consulting and market entry strategy for various large companies in african markets`,
   },
   projects: {
     title: 'Portfolio'

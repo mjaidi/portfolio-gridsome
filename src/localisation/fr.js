@@ -20,7 +20,22 @@ export default {
     email: 'Email',
     phone: 'Téléphone',
     contact: 'Contactez moi',
-    cv: 'Téléchargez CV'
+    cv: 'Téléchargez CV',
+    education: 'Mon Education',
+    experience: 'Mon Experience',
+    skills: 'Mes Compétences',
+    wagonTitle: 'Le Wagon Coding Bootcamp',
+    epflTitle: 'Ecole Polytechnique Fédérale Lausanne (EPFL)',
+    hopkinsTitle: 'Johns Hopkins University',
+    freelanceTitle: 'Freelance Web Developement',
+    patibisTitle: 'Patibis SARL',
+    pwcTitle: 'Strategy & (formerly Booz & Company)',
+    wagonContent: `a`,
+    epflContent: `a`,
+    hopkinsContent: `a`,
+    freelanceContent: `a`,
+    patibisContent: `a`,
+    pwcContent: `a`,
   },
   projects: {
     title: 'Projets'

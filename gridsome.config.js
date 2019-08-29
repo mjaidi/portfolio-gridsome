@@ -6,21 +6,21 @@
 
 module.exports = {
   siteName: "Majid's Portfolio",
-  siteDescription: 'A sweet exhibition of some of my best work',
+  siteDescription: "A sweet exhibition of some of my best work",
 
   plugins: [
     {
       // Create posts from markdown files
-      use: '@gridsome/source-filesystem',
+      use: "@gridsome/source-filesystem",
       options: {
-        typeName: 'Project',
-        path: 'content/projects/**/*.md',
-        route: '/:slug',
+        typeName: "Project",
+        path: "content/projects/**/*.md",
+        route: "/:slug",
         refs: {
           // Creates a GraphQL collection from 'tags' in front-matter and adds a reference.
           tags: {
-            typeName: 'Tag',
-            route: '/tag/:id',
+            typeName: "Tag",
+            route: "/tag/:id",
             create: true
           }
         }
@@ -31,12 +31,10 @@ module.exports = {
   transformers: {
     //Add markdown support to all file-system sources
     remark: {
-      externalLinksTarget: '_blank',
-      externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
-      anchorClassName: 'icon icon-link',
-      plugins: [
-        '@gridsome/remark-prismjs'
-      ]
+      externalLinksTarget: "_blank",
+      externalLinksRel: ["nofollow", "noopener", "noreferrer"],
+      anchorClassName: "icon icon-link",
+      plugins: ["@gridsome/remark-prismjs"]
     }
-  },
-}
+  }
+};

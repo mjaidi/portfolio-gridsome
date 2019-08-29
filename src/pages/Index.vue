@@ -1,18 +1,20 @@
 <template>
-  <Layout v-slot:default="slotLang">
-    <Home v-bind:lang='slotLang.lang'/>
-    <About v-bind:lang='slotLang.lang'/>
-    <Projects v-bind:lang='slotLang.lang'/>
-    <Contact v-bind:lang='slotLang.lang'/>
-  </Layout>
+  <v-app>
+    <Layout v-slot:default="slotProps">
+      <Home v-bind:lang="slotProps.lang" />
+      <About v-bind:lang="slotProps.lang" />
+      <Projects v-bind:lang="slotProps.lang" v-bind:isMobile="slotProps.isMobile" />
+      <Contact v-bind:lang="slotProps.lang" />
+    </Layout>
+  </v-app>
 </template>
 
 <script>
-  import About from '../components/About'
-  import Home from '../components/Home'
-  import Projects from '../components/Projects'
-  import Contact from '../components/Contact'
-  import Layout from '../layouts/Default'
+import About from "../components/About";
+import Home from "../components/Home";
+import Projects from "../components/Projects";
+import Contact from "../components/Contact";
+import Layout from "../layouts/Default";
 export default {
   components: {
     Home,
@@ -22,8 +24,8 @@ export default {
     Contact
   },
   metaInfo: {
-    title: 'Porfolio'
+    title: "Porfolio"
   }
-}
+};
 </script>
 

@@ -23,9 +23,11 @@
   .text-center {
     text-align: center;
   }
+
   .full-height {
     height: 100vh;
   }
+
   .text-yellow {
     color: $yellow;
   }
@@ -35,6 +37,7 @@
     text-align: center;
     font-size: 3rem;
   }
+
   .before-title {
     &:before {
       position: absolute;
@@ -56,6 +59,7 @@
       border: 0.4rem solid #E5BE24;
     }
   }
+
   .after-title {
     &:before {
       position: absolute;
@@ -80,21 +84,26 @@
   }
 
 
-@media only screen and (max-width: 900px) {
-  .before-title {
-    &:before {
-      content: none;
+  @media only screen and (max-width: 900px) {
+    .page-title {
+      font-size: 2rem;
     }
-  }
 
-  .vertical-title {
-    &:before {
-      content: none;
+    .before-title {
+      &:before {
+        content: none;
+      }
+    }
+
+    .vertical-title {
+      &:before {
+        content: none;
+      }
+    }
+
+    .after-title {
+      &:before {
+        content: none;
+      }
     }
   }
-  .after-title {
-    &:before {
-      content: none;
-    }
-  }
-}

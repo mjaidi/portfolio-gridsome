@@ -1,5 +1,68 @@
 #projects {
-  min-height: 80vh;
-  position: relative;
-  margin-top: 7rem;
+    min-height: 80vh;
+    position: relative;
+    margin-top: 7rem;
+}
+
+.project-card-wrapper {
+    position: relative;
+    margin: 1rem;
+    height: 15rem;
+    .project-card {
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+    }
+    .project-overlay {
+        opacity: 0;
+    }
+    &:hover {
+        .project-card {
+            cursor: pointer;
+            transition: 0.5s ease;
+            border: 15px solid $yellow;
+            border-image: url('../../static/images/corners.png') 34% repeat;
+            background-size: 98%;
+        }
+        .project-overlay {
+            transition: 0.5s ease;
+            opacity: 1;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        .title {
+            text-transform: capitalize;
+            font-weight: bold;
+            color: $yellow;
+        }
+    }
+}
+
+.dialogBg {
+    box-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2), 0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12);
+}
+
+.v-dialog {
+    box-shadow: none;
+}
+
+.close-icon {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: $dark;
+}
+
+.headline {
+    font-weight: bold;
+    justify-content: center;
+}
+
+.project-dialog-image {
+    display: flex;
+    margin: 2rem auto;
 }

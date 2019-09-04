@@ -3,7 +3,9 @@ title: MasterChef Junior English
 published: true
 tags: ['en']
 lang: 'en'
-coverImage: ../images/mcjunior.png
+images:
+  - image: ../images/mcjunior.png
+  - image: ../images/artket.png
 canonical_url: false
 description: 'Lorem ipsum'
 ---

@@ -3,7 +3,9 @@ title: Stroc English
 published: true
 tags: ['en']
 lang: 'en'
-coverImage: ../images/stroc.png
+images:
+  - image: ../images/stroc.png
+  - image: ../images/artket.png
 canonical_url: false
 description: "Lorem ipsum"
 ---

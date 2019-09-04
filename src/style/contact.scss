@@ -1,6 +1,39 @@
 #contact {
-  min-height: 80vh;
-  position: relative;
-
+    min-height: 80vh;
+    position: relative;
+    .contact-subtitle {
+        margin: 1rem;
+        color: $yellow;
+    }
+    input[type="text"],
+    textarea {
+        display: block;
+        margin: 1rem;
+        padding: 1rem;
+        width: 90%;
+        height: 3rem;
+        background: #f7f6f6;
+        &:focus {
+            outline-color: $yellow;
+        }
+    }
+    textarea {
+        min-height: 20rem;
+    }
+    .form-btn {
+        margin: 1rem;
+        font-size: 1rem;
+        padding: 0.75rem;
+        background-color: $yellow;
+        color: white;
+        box-shadow: 1px 1px 2px $grey;
+        display: block;
+        width: 90%;
+        &:hover {
+            color: white;
+            background: $grey;
+            box-shadow: 1px 1px 2px $yellow;
+            border-color: $yellow;
+        }
+    }
 }
-

@@ -3,7 +3,9 @@ title: Serenity English
 published: true
 tags: ['en']
 lang: 'en'
-coverImage: ../images/serenity-screen.png
+images:
+  - image: ../images/serenity-screen.png
+  - image: ../images/artket.png
 canonical_url: false
 description: 'Lorem ipsum'
 ---

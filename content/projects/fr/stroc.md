@@ -3,7 +3,9 @@ title: Stroc French
 published: true
 tags: ['fr']
 lang: 'fr'
-coverImage: ../images/stroc.png
+images:
+  - image: ../images/mcjunior.png
+  - image: ../images/artket.png
 canonical_url: false
 description: "Lorem ipsum"
 ---

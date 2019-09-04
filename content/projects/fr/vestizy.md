@@ -3,7 +3,9 @@ title: Vestizy French
 published: true
 tags: ['ruby', 'rails']
 lang: 'fr'
-coverImage: ../images/vestizy.png
+images:
+  - image: ../images/mcjunior.png
+  - image: ../images/artket.png
 canonical_url: false
 description: "Lorem ipsum"
 ---

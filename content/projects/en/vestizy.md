@@ -3,7 +3,9 @@ title: Vestizy English
 published: true
 tags: ['en']
 lang: 'en'
-coverImage: ../images/vestizy.png
+images:
+  - image: ../images/vestizy.png
+  - image: ../images/artket.png
 canonical_url: false
 description: "Lorem ipsum"
 ---

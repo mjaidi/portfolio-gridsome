@@ -3,7 +3,9 @@ title: BidnBill French
 published: true
 tags: ['fr']
 lang: 'fr'
-coverImage: ../images/bid-bill.png
+images:
+  - image: ../images/bid-bill.png
+  - image: ../images/artket.png
 canonical_url: false
 description: "Lorem ipsum"
 ---

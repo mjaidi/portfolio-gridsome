@@ -4,12 +4,23 @@
     <span class="vertical-title"></span>
     <h1 class="page-title">{{staticText.contact.title}}</h1>
     <span class="after-title"></span>
-    <br />
-    <br />
-    <br />
-    <g-image alt="Example image" src="~/favicon.png" width="135" />
-
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur excepturi labore tempore expedita, et iste tenetur suscipit explicabo! Dolores, aperiam non officia eos quod asperiores</p>
+    <v-container>
+      <v-layout row wrap>
+        <v-flex xs12 md6>
+          <h2 class="contact-subtitle">Get in touch</h2>
+        </v-flex>
+        <v-flex xs12 md6>
+          <h2 class="contact-subtitle">Leave me a message</h2>
+          <form action="https://formspree.io/majidj.auto@gmail.com" method="POST">
+            <input type="text" name="name" placeholder="Name" />
+            <input type="text" name="email" placeholder="Email" />
+            <input type="text" name="subject" placeholder="Subject" />
+            <textarea name="message" placeholder="Message" />
+            <button type="submit" class="form-btn">Send</button>
+          </form>
+        </v-flex>
+      </v-layout>
+    </v-container>
   </div>
 </template>
 

@@ -89,7 +89,10 @@ query Projects{
           id
         }
         description
-        coverImage (width: 770, height: 380, blur: 10)
+        images {
+          preview: image (width: 400, height: 400, fit: cover)
+          image (width: 950, height: 500, fit: cover)
+        }
         ...on Project {
             id
             title

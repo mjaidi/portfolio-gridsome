@@ -3,7 +3,9 @@ title: Artket French
 published: true
 tags: ['fr']
 lang: 'fr'
-coverImage: ../images/artket.png
+images:
+  - image: ../images/artket.png
+  - image: ../images/artket.png
 canonical_url: false
 description: "Lorem ipsum"
 ---

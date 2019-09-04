@@ -3,7 +3,9 @@ title: Serenity French
 published: true
 tags: ['fr']
 lang: 'fr'
-coverImage: ../images/serenity-screen.png
+images:
+  - image: ../images/serenity-screen.png
+  - image: ../images/artket.png
 canonical_url: false
 description: "Lorem ipsum"
 ---

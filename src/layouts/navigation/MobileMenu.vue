@@ -52,14 +52,16 @@
 import fr from "../../localisation/fr.js";
 import en from "../../localisation/en.js";
 function elementInViewport(el) {
-  let bounding = el.getBoundingClientRect();
-  if (
-    bounding.top >= 0 &&
-    bounding.top < window.innerHeight - window.innerHeight * 0.5
-  ) {
-    return true;
+  if (typeof document !== `undefined`) {
+    let bounding = el.getBoundingClientRect();
+    if (
+      bounding.top >= 0 &&
+      bounding.top < window.innerHeight - window.innerHeight * 0.5
+    ) {
+      return true;
+    }
+    return false;
   }
-  return false;
 }
 
 export default {
@@ -99,11 +101,15 @@ export default {
     }
   },
   created() {
-    document.addEventListener("scroll", this.handleScroll);
-    this.activeItem = this.items[0];
+    if (typeof document !== `undefined`) {
+      document.addEventListener("scroll", this.handleScroll);
+      this.activeItem = this.items[0];
+    }
   },
   destroyed() {
-    document.removeEventListener("scroll", this.handleScroll);
+    if (typeof document !== `undefined`) {
+      document.removeEventListener("scroll", this.handleScroll);
+    }
   },
   methods: {
     changeLanguage() {
@@ -114,12 +120,14 @@ export default {
       this.$router.push({ path: path });
     },
     handleScroll() {
-      this.items.find(item => {
-        const el = document.getElementById(item.id);
-        if (elementInViewport(el)) {
-          this.activeItem = item;
-        }
-      });
+      if (typeof document !== `undefined`) {
+        this.items.find(item => {
+          const el = document.getElementById(item.id);
+          if (elementInViewport(el)) {
+            this.activeItem = item;
+          }
+        });
+      }
     }
   }
 };

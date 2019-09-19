@@ -24,17 +24,21 @@ export default {
     isMobile: false
   }),
   created() {
-    window.addEventListener("resize", this.handleResize);
-    this.handleResize();
+    if (typeof window !== `undefined`) {
+      window.addEventListener("resize", this.handleResize);
+      this.handleResize();
+    }
   },
   destroyed() {
     this.removeEventListener("resize", this.handleResize);
   },
   methods: {
     handleResize() {
-      window.innerWidth < 1000
-        ? (this.isMobile = true)
-        : (this.isMobile = false);
+      if (typeof window !== `undefined`) {
+        window.innerWidth < 1000
+          ? (this.isMobile = true)
+          : (this.isMobile = false);
+      }
     },
     currentLanguage(lang) {
       this.lang = lang;

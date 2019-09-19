@@ -72,6 +72,7 @@ export default {
     this.projects = this.$static.projects.edges.filter(
       e => e.node.lang === this.lang
     );
+    this.activeProject = this.projects[0].node
   }
 };
 </script>

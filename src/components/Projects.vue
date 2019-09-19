@@ -43,7 +43,7 @@ export default {
   data: () => ({
     projects: null,
     dialog: false,
-    activeProject: null,
+    activeProject: {title: null, images: []},
   }),
   computed: {
     staticText() {

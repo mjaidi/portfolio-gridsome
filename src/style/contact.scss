@@ -6,6 +6,12 @@
         flex-direction: column;
         align-items: center;
     }
+    .form-error {
+        color: $danger;
+        align-self: flex-start;
+        margin-left: 2.5rem;
+        margin-bottom: 1rem;
+    }
     .contact-subtitle {
         margin: 1rem;
         color: $yellow;
@@ -20,10 +26,14 @@
         background: #f7f6f6;
         &:focus {
             outline-color: $yellow;
+            border: 1px solid $yellow;
         }
     }
     textarea {
         min-height: 15rem;
+    }
+    .form-input-error {
+        border: 1px solid $danger;
     }
     .form-btn {
         margin: 1rem;
@@ -37,8 +47,11 @@
         &:hover {
             color: white;
             background: $grey;
-            box-shadow: 1px 1px 2px $yellow;
             border-color: $yellow;
+        }
+        &:disabled {
+            background: $grey;
+            box-shadow: 1px 1px 2px $yellow;
         }
     }
 }

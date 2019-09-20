@@ -21,18 +21,18 @@
               type="text"
               v-model.trim="$v.name.$model"
               name="name"
-              placeholder="Name"
+              :placeholder="staticText.contact.name"
               :class="{ 'form-input-error': $v.name.$error }"
               @input="checkValid"
             />
             <div
               class="form-error"
               v-if="!$v.name.required && submitStatus === 'SUBMITING'"
-            >Name is required</div>
+            >{{staticText.contact.errorNameR}}</div>
             <div
               class="form-error"
               v-if="!$v.name.minLength"
-            >Name must have at least {{$v.name.$params.minLength.min}} letters.</div>
+            >{{staticText.contact.errorNameL}} {{$v.name.$params.minLength.min}}</div>
 
             <input
               type="text"
@@ -45,13 +45,13 @@
             <div
               class="form-error"
               v-if="!$v.email.required && submitStatus === 'SUBMITING'"
-            >Email is required</div>
-            <div class="form-error" v-if="!$v.email.email">Email must be valid.</div>
+            >{{staticText.contact.errorEmailR}}</div>
+            <div class="form-error" v-if="!$v.email.email">{{staticText.contact.errorEmailV}}</div>
             <input
               type="text"
               v-model.trim="$v.subject.$model"
               name="subject"
-              placeholder="Subject"
+              :placeholder="staticText.contact.subject"
               :class="{ 'form-input-error': $v.subject.$error  }"
               @input="checkValid"
             />
@@ -59,7 +59,7 @@
             <div
               class="form-error"
               v-if="!$v.subject.minLength"
-            >Subject must have at least {{$v.subject.$params.minLength.min}} letters.</div>
+            >{{staticText.contact.errorSubjectL}}{{$v.subject.$params.minLength.min}}</div>
             <textarea
               v-model.trim="$v.message.$model"
               name="message"
@@ -70,11 +70,11 @@
             <div
               class="form-error"
               v-if="!$v.message.required && submitStatus === 'SUBMITING'"
-            >Message is required</div>
+            >{{staticText.contact.errorMessageR}}</div>
             <div
               class="form-error"
               v-if="!$v.message.minLength"
-            >Message must have at least {{$v.message.$params.minLength.min}} letters.</div>
+            >{{staticText.contact.errorMessageL}} {{$v.message.$params.minLength.min}}</div>
             <input
               type="hidden"
               name="_next"

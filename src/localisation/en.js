@@ -47,6 +47,15 @@ Corporate and personal websites`,
   },
   contact: {
     title: "Contact me",
-    subtitle: "Leave me a message"
+    subtitle: "Leave me a message",
+    name: "Name",
+    subject: "Subject",
+    errorNameR: "Name is required",
+    errorNameL: "Name minimum length is ",
+    errorEmailR: "Email is required",
+    errorEmailV: "Email must be valid",
+    errorSubjectL: "Subject minimum length is ",
+    errorMessageR: "Message is required",
+    errorMessageL: "Message minimum length is "
   }
 };

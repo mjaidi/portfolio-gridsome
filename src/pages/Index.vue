@@ -3,7 +3,11 @@
     <Layout v-slot:default="slotProps">
       <Home v-bind:lang="slotProps.lang" />
       <About v-bind:lang="slotProps.lang" />
-      <Projects v-bind:lang="slotProps.lang" v-bind:isMobile="slotProps.isMobile" />
+      <Projects
+        v-bind:lang="slotProps.lang"
+        v-bind:isMobile="slotProps.isMobile"
+        v-bind:activeSidebar="slotProps.activeSidebar"
+      />
       <Contact v-bind:lang="slotProps.lang" />
     </Layout>
   </v-app>

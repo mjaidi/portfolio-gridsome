@@ -44,6 +44,15 @@ export default {
   },
   contact: {
     title: "Contactez moi",
-    subtitle: "Laissez moi un message"
+    subtitle: "Laissez moi un message",
+    name: "Nom",
+    subject: "Sujet",
+    errorNameR: "Nom est un champs obligatoire",
+    errorNameL: "Nom longeur minimum est  ",
+    errorEmailR: "Email est un champs obligatoire",
+    errorEmailV: "Email doit être valide",
+    errorSubjectL: "Sujet longeur minimum est ",
+    errorMessageR: "Message est un champs obligatoire",
+    errorMessageL: "Message longeur minimum est "
   }
 };

@@ -4,10 +4,10 @@
     <v-icon @click="$emit('close')" class="close-icon">mdi-close</v-icon>
     <v-carousel hide-delimiter-background :cycle="cycle" height="400" :continuous="false">
       <v-carousel-item v-for="(image, i) in activeProject.images" :key="i">
-        <v-sheet  height="100%" tile>
-          <v-row class="fill-height" align="center" justify="center">
+        <v-sheet height="100%" tile>
+          <v-layout row wrap class="fill-height" align="center" justify="center">
             <img :src="image.image.src" alt class="project-dialog-image" />
-          </v-row>
+          </v-layout>
         </v-sheet>
       </v-carousel-item>
     </v-carousel>
@@ -25,7 +25,7 @@ export default {
   name: "ProjectDetails",
   props: ["activeProject"],
   data: () => ({
-    cycle: false,
+    cycle: false
   })
 };
 </script>

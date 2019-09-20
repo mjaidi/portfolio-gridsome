@@ -11,7 +11,7 @@
     <!-- List posts -->
     <div class="project-cards">
       <div class="my-spacer"></div>
-      <v-container>
+      <v-container fluid>
         <v-layout row wrap>
           <v-flex xs12 sm6 md4 v-for="project in projects" :key="project.node.id" @click='handleClick(project.node)'>
             <ProjectCard :project="project.node" />
@@ -22,7 +22,7 @@
     </div>
 
     <v-dialog v-model="dialog" max-width="1200" >
-      <ProjectDetails v-bind:activeProject='activeProject' v-on:close='handleClose()' :class="{offsetWidth: !isMobile, dialogBg: true}"/>
+      <ProjectDetails v-bind:activeProject='activeProject' v-on:close='handleClose()' :class="{offsetWidth: (!isMobile && activeSidebar), dialogBg: true}"/>
     </v-dialog>
 
   </div>
@@ -39,7 +39,7 @@ export default {
     ProjectCard,
     ProjectDetails
   },
-  props: ["lang", 'isMobile'],
+  props: ["lang", 'isMobile', 'activeSidebar'],
   data: () => ({
     projects: null,
     dialog: false,

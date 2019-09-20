@@ -18,6 +18,7 @@
         <i :class="`fas ${ item.icon }`"></i>
         <p class="subtitle">{{ staticText.sidebar[item.title] }}</p>
       </div>
+
       <v-select
         class="language-changer"
         color="white"

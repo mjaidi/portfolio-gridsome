@@ -45,8 +45,18 @@
         bottom: -5%;
         width: 70%;
         left: 15%;
+    }
+}
+
+.v-card {
+    box-shadow: none;
+    .theme--light.v-list {
+        background-color: $dark;
+        .v-list__tile:hover {
+            background: $grey;
+        }
         .v-list__tile__title {
-            color: black;
+            color: white;
         }
     }
 }

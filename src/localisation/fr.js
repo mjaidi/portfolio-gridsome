@@ -43,6 +43,7 @@ export default {
     subtitle: "Une selection de mes réalisations récentes"
   },
   contact: {
-    title: "Contactez moi"
+    title: "Contactez moi",
+    subtitle: "Laissez moi un message"
   }
 };

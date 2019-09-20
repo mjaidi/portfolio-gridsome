@@ -46,6 +46,7 @@ Corporate and personal websites`,
     subtitle: "A selection of my recent work"
   },
   contact: {
-    title: "Contact me"
+    title: "Contact me",
+    subtitle: "Leave me a message"
   }
 };

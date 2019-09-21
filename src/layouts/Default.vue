@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <transition name="fade" mode="in-out" appear>
-      <Sidebar v-on:currentLanguage="currentLanguage" v-show="!isMobile && activeSidebar" />
+      <Sidebar v-on:currentLanguage="currentLanguage" v-if="!isMobile && activeSidebar" />
     </transition>
     <MobileMenu v-on:currentLanguage="currentLanguage" v-if="isMobile" />
     <v-btn

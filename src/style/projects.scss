@@ -99,6 +99,10 @@
             color: $primary;
         }
     }
+    .tag-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
     .tag {
         padding: 0.7rem;
         border: 1px solid $primary;

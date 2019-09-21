@@ -8,7 +8,7 @@ images:
   - image: ../images/artket.png
 canonical_url: false
 description: "Lorem ipsum"
-website: '#'
+website: null
 
 ---
 

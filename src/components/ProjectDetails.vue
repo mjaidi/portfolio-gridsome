@@ -12,14 +12,14 @@
       </v-carousel-item>
     </v-carousel>
 
-    <div class="project-subtitle">
+    <div class="project-subtitle" v-show="activeProject.website !== null">
       <h3>Website</h3>
       <a :href="'http://' + activeProject.website" target="_blank">{{activeProject.website}}</a>
     </div>
 
     <div class="project-subtitle">
       <h3>Technology</h3>
-      <div class="my-4">
+      <div class="my-4 tag-wrapper">
         <span v-for="tag in activeProject.tags" :class="['tag', color(tag)]">{{tag.id}}</span>
       </div>
     </div>

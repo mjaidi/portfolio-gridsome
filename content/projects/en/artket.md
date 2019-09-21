@@ -1,13 +1,14 @@
 ---
 title: Artket English
 published: true
-tags: ['en']
+tags: ['Ruby', 'Rails', 'Javascript', 'HTML', 'CSS', 'Postgres']
 lang: 'en'
 images:
   - image: ../images/artket.png
   - image: ../images/artket.png
 canonical_url: false
 description: 'Lorem ipsum'
+website: 'artket1.herokuapp.com'
 ---
 
 Readability, however, is emphasized above all else. A Markdown-formatted

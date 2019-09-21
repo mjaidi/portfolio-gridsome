@@ -76,3 +76,38 @@
 .v-carousel__controls {
     background: none;
 }
+
+.v-carousel {
+    margin-bottom: 2rem;
+}
+
+.v-card__text {
+    padding: 0;
+}
+
+.project-subtitle {
+    margin: 1rem;
+    h3 {
+        color: $yellow;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    a {
+        text-decoration: none;
+        color: inherit;
+        &:hover {
+            color: $primary;
+        }
+    }
+    .tag {
+        padding: 0.7rem;
+        border: 1px solid $primary;
+        margin: 1rem;
+        color: $primary;
+        font-weight: bold;
+        &.red-tag {
+            border-color: $danger;
+            color: $danger;
+        }
+    }
+}

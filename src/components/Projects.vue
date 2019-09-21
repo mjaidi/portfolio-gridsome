@@ -43,7 +43,7 @@ export default {
   data: () => ({
     projects: null,
     dialog: false,
-    activeProject: {title: null, images: []},
+    activeProject: {title: null, images: [], website: null, tags: []},
   }),
   computed: {
     staticText() {
@@ -89,6 +89,7 @@ query Projects{
         tags {
           id
         }
+        website
         description
         images {
           preview: image (width: 400, height: 400, fit: cover)

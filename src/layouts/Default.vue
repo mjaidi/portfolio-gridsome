@@ -23,7 +23,7 @@
         <slot v-bind:lang="lang" v-bind:isMobile="isMobile" v-bind:activeSidebar="activeSidebar"></slot>
       </main>
     </transition>
-    <v-btn class="btn-sidebar btn-scroll-sidebar" @click="scrollTop()">
+    <v-btn class="btn-sidebar btn-scroll-sidebar" @click="scrollTop()" v-if="!isMobile">
       <v-icon>mdi-chevron-up</v-icon>
     </v-btn>
   </v-app>
@@ -46,8 +46,8 @@ export default {
   created() {
     if (typeof window !== `undefined`) {
       window.addEventListener("resize", this.handleResize);
-      this.handleResize();
     }
+    this.handleResize();
   },
   destroyed() {
     this.removeEventListener("resize", this.handleResize);
@@ -66,6 +66,8 @@ export default {
         window.innerWidth < 1000
           ? (this.isMobile = true)
           : (this.isMobile = false);
+      } else {
+        this.isMobile = true;
       }
     },
     currentLanguage(lang) {

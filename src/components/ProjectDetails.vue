@@ -12,7 +12,22 @@
       </v-carousel-item>
     </v-carousel>
 
-    <v-card-text v-html="activeProject.content"></v-card-text>
+    <div class="project-subtitle">
+      <h3>Website</h3>
+      <a :href="'http://' + activeProject.website" target="_blank">{{activeProject.website}}</a>
+    </div>
+
+    <div class="project-subtitle">
+      <h3>Technology</h3>
+      <div class="my-4">
+        <span v-for="tag in activeProject.tags" :class="['tag', color(tag)]">{{tag.id}}</span>
+      </div>
+    </div>
+
+    <div class="project-subtitle">
+      <h3>Description</h3>
+      <v-card-text v-html="activeProject.content"></v-card-text>
+    </div>
 
     <v-card-actions>
       <div class="flex-grow-1"></div>
@@ -26,7 +41,19 @@ export default {
   props: ["activeProject"],
   data: () => ({
     cycle: false
-  })
+  }),
+  methods: {
+    color(tag) {
+      switch (tag.id) {
+        case "Ruby":
+          return "red-tag";
+          break;
+        case "Rails":
+          return "red-tag";
+          break;
+      }
+    }
+  }
 };
 </script>
 

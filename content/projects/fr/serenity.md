@@ -8,6 +8,8 @@ images:
   - image: ../images/artket.png
 canonical_url: false
 description: "Lorem ipsum"
+website: '#'
+
 ---
 
 Readability, however, is emphasized above all else. A Markdown-formatted

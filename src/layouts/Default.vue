@@ -1,18 +1,18 @@
 <template>
   <v-app>
     <transition name="fade" mode="in-out" appear>
-      <Sidebar v-on:currentLanguage="currentLanguage" v-if="!isMobile && activeSidebar" />
+      <Sidebar v-on:currentLanguage="currentLanguage" v-show="!isMobile && activeSidebar" />
     </transition>
-    <MobileMenu v-on:currentLanguage="currentLanguage" v-if="isMobile" />
+    <MobileMenu v-on:currentLanguage="currentLanguage" v-show="isMobile" />
     <v-btn
-      v-if="!isMobile && activeSidebar"
+      v-show="!isMobile && activeSidebar"
       class="btn-sidebar btn-close-sidebar"
       @click="toggleSidebar()"
     >
       <v-icon>mdi-chevron-left</v-icon>
     </v-btn>
     <v-btn
-      v-if="!isMobile && !activeSidebar"
+      v-show="!isMobile && !activeSidebar"
       class="btn-sidebar btn-expand-sidebar"
       @click="toggleSidebar()"
     >
@@ -23,7 +23,7 @@
         <slot v-bind:lang="lang" v-bind:isMobile="isMobile" v-bind:activeSidebar="activeSidebar"></slot>
       </main>
     </transition>
-    <v-btn class="btn-sidebar btn-scroll-sidebar" @click="scrollTop()" v-if="!isMobile">
+    <v-btn class="btn-sidebar btn-scroll-sidebar" @click="scrollTop()" v-show="!isMobile">
       <v-icon>mdi-chevron-up</v-icon>
     </v-btn>
   </v-app>

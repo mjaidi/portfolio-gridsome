@@ -12,6 +12,8 @@
         transition="slide-x-transition"
         fixed
         top
+        center
+        min-width="90%"
         v-model="active"
       >
         <template v-slot:activator="{ on }">
@@ -135,9 +137,9 @@ export default {
 
 <style>
 #mobile-menu {
-  z-index: 2000;
+  z-index: 200;
 }
 .v-menu__content {
-  min-width: 200px !important;
+  left: 5% !important;
 }
 </style>

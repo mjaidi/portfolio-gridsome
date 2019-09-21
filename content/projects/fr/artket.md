@@ -1,7 +1,7 @@
 ---
 title: Artket French
 published: true
-tags: ['fr']
+tags: ['Ruby', 'Rails', 'Javascript', 'Bootstrap', 'HTML', 'CSS', 'Heroku', 'Postgres']
 lang: 'fr'
 images:
   - image: ../images/artket.png

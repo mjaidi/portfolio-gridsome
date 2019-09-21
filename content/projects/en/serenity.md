@@ -1,7 +1,7 @@
 ---
 title: Serenity English
 published: true
-tags: ['en']
+tags: ['Ruby', 'Rails', 'Vue.js', 'Javascript','Vuetify', 'Bootstrap', 'HTML', 'CSS', 'AWS', 'Postgres', 'Circle-Ci', 'Jest', 'Minitest', 'Rspec']
 lang: 'en'
 images:
   - image: ../images/serenity-screen.png

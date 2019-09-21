@@ -1,7 +1,7 @@
 ---
 title: Artket English
 published: true
-tags: ['Ruby', 'Rails', 'Javascript', 'HTML', 'CSS', 'Postgres']
+tags: ['Ruby', 'Rails', 'Javascript', 'Bootstrap', 'HTML', 'CSS', 'Heroku', 'Postgres']
 lang: 'en'
 images:
   - image: ../images/artket.png

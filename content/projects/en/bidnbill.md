@@ -1,7 +1,7 @@
 ---
 title: BidnBill English
 published: true
-tags: ['en']
+tags: ['Ruby', 'Rails', 'Vue.js', 'Javascript','Vuetify', 'Bootstrap', 'HTML', 'CSS', 'Heroku', 'Postgres']
 lang: 'en'
 images:
   - image: ../images/bid-bill.png

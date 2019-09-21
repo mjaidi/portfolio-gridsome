@@ -1,7 +1,7 @@
 ---
 title: Vestizy English
 published: true
-tags: ['en']
+tags: ['Ruby', 'Rails', 'Javascript', 'Bootstrap', 'HTML', 'CSS', 'Heroku', 'Postgres']
 lang: 'en'
 images:
   - image: ../images/vestizy.png

@@ -1,7 +1,7 @@
 ---
 title: Vestizy French
 published: true
-tags: ['ruby', 'rails']
+tags: ['Ruby', 'Rails', 'Javascript', 'Bootstrap', 'HTML', 'CSS', 'Heroku', 'Postgres']
 lang: 'fr'
 images:
   - image: ../images/mcjunior.png

@@ -1,7 +1,7 @@
 ---
 title: Stroc French
 published: true
-tags: ['fr']
+tags: ['Wordpress', 'HTML', 'CSS']
 lang: 'fr'
 images:
   - image: ../images/mcjunior.png

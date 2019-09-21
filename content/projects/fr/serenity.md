@@ -1,7 +1,7 @@
 ---
 title: Serenity French
 published: true
-tags: ['fr']
+tags: ['Ruby', 'Rails', 'Vue.js', 'Javascript','Vuetify', 'Bootstrap', 'HTML', 'CSS', 'AWS', 'Postgres', 'Circle-Ci', 'Jest', 'Minitest', 'Rspec']
 lang: 'fr'
 images:
   - image: ../images/serenity-screen.png

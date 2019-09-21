@@ -104,14 +104,26 @@
         flex-wrap: wrap;
     }
     .tag {
-        padding: 0.7rem;
-        border: 1px solid $primary;
-        margin: 1rem;
-        color: $primary;
+        padding: 0.5rem;
+        border: 1px solid $dark;
+        margin: 0.7rem;
+        color: $dark;
         font-weight: bold;
         &.red-tag {
             border-color: $danger;
             color: $danger;
+        }
+        &.orange-tag {
+            border-color: $warning;
+            color: $warning;
+        }
+        &.blue-tag {
+            border-color: $primary;
+            color: $primary;
+        }
+        &.green-tag {
+            border-color: $success;
+            color: $success;
         }
     }
 }

@@ -12,14 +12,14 @@
       </v-carousel-item>
     </v-carousel>
 
-    <div class="project-subtitle" v-show="activeProject.website !== null">
+    <div class="project-subtitle" v-show="activeProject.website !== ''">
       <h3>Website</h3>
       <a :href="'http://' + activeProject.website" target="_blank">{{activeProject.website}}</a>
     </div>
 
     <div class="project-subtitle">
       <h3>Technology</h3>
-      <div class="my-4 tag-wrapper">
+      <div class="my-3 tag-wrapper">
         <span v-for="tag in activeProject.tags" :class="['tag', color(tag)]">{{tag.id}}</span>
       </div>
     </div>
@@ -47,10 +47,32 @@ export default {
       switch (tag.id) {
         case "Ruby":
           return "red-tag";
-          break;
         case "Rails":
           return "red-tag";
-          break;
+        case "Javascript":
+          return "blue-tag";
+        case "Vue.js":
+          return "blue-tag";
+        case "React":
+          return "blue-tag";
+        case "Jest":
+          return "orange-tag";
+        case "Minitest":
+          return "orange-tag";
+        case "Rspec":
+          return "orange-tag";
+        case "Postgres":
+          return "green-tag";
+        case "Heroku":
+          return "green-tag";
+        case "AWS":
+          return "green-tag";
+        case "Circle-Ci":
+          return "green-tag";
+        case "Netlify":
+          return "green-tag";
+        case "Wordpress":
+          return "green-tag";
       }
     }
   }

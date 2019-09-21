@@ -1,7 +1,7 @@
 ---
 title: BidnBill French
 published: true
-tags: ['fr']
+tags: ['Ruby', 'Rails', 'Vue.js', 'Javascript','Vuetify', 'Bootstrap', 'HTML', 'CSS', 'Heroku', 'Postgres']
 lang: 'fr'
 images:
   - image: ../images/bid-bill.png

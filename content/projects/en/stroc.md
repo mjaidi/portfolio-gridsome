@@ -1,7 +1,7 @@
 ---
 title: Stroc English
 published: true
-tags: ['en']
+tags: ['Wordpress', 'HTML', 'CSS']
 lang: 'en'
 images:
   - image: ../images/stroc.png

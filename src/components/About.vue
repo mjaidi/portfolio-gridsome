@@ -62,7 +62,9 @@
                 <span class="description-text">+212 663 44 44 44</span>
               </h6>
               <div class="button-wrapper">
-                <button class="btn contact-btn">{{staticText.about.contact}}</button>
+                <button class="btn contact-btn">
+                  <a href="#contact">{{staticText.about.contact}}</a>
+                </button>
                 <button class="btn cv-btn">
                   <a href="CV-2019v-2.pdf" target="_blank">{{staticText.about.cv}}</a>
                 </button>

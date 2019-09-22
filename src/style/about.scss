@@ -61,6 +61,13 @@
             padding-left: 3rem;
         }
         .btn {
+            a {
+                text-decoration: none;
+                color: inherit;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
             font-size: 1.5rem;
             padding: 1rem;
             border-radius: 3rem;
@@ -75,13 +82,6 @@
             }
         }
         .cv-btn {
-            a {
-                text-decoration: none;
-                color: inherit;
-                &:hover {
-                    text-decoration: none;
-                }
-            }
             margin-left: 2rem;
             color: white;
             background: $yellow;

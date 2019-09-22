@@ -1,7 +1,7 @@
 <template>
   <div class="project-card-wrapper">
     <div
-      class="project-card"
+      :class="{'project-card': true, 'card-fit': project.website === 'lewagon.com' }"
       :style="style"
       @mouseover="hoveringToggle(true)"
       @mouseout="hoveringToggle(false)"

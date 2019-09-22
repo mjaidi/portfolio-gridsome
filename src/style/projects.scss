@@ -16,6 +16,9 @@
     .project-overlay {
         opacity: 0;
     }
+    .card-fit {
+        background-size: contain;
+    }
     &:hover {
         .project-card {
             cursor: pointer;

@@ -13,8 +13,11 @@ export default {
   about: {
     title: "About me",
     subtitle: "Developer, Doer, Creative Thinker",
-    description:
-      "Praesent ut tortor consectetur, semper sapien non, lacinia augue. Aenean arcu libero, facilisis et nisi non, tempus faucibus tortor. Mauris vel nulla aliquam, pellentesque enim ac, faucibus tortor. Nulla odio nibh, cursus sit amet urna id, dignissim euismod augue. \n\nDuis sollicitudin, libero porttitor rutrum ultrices, turpis lorem fermentum justo, quis ornare augue tortor non est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+    description: `After having successfuly tried out many different carrer options I recently fell in love with web developement and the technology sector.  \n
+      I am passionate about learning new things and adapting to the latest technologies and trends in order to provide the best experience for the end user. \n
+      I am a well organized, independent, problem solver with high attention to detail. Fan of outdoors activities, hikes, travel, and meeting new people wherever I go.\n
+      I am interested in the entire web developement spectrum, from software architecture to UX and UI design. I look forwards to working on interesting projects with inspiring people
+      `,
     age: "Age",
     residence: "Residence",
     website: "Website",

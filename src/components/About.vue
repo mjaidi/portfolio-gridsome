@@ -13,13 +13,17 @@
           <v-flex sm12 md5>
             <img src="../../static/images/mj.jpeg" alt class="about-image" />
             <div class="flex-center">
-              <a class="social-link" href="http://www.github.com" target="_blank">
+              <a class="social-link" href="https://github.com/mjaidi" target="_blank">
                 <i class="fab fa-github"></i>
               </a>
-              <a class="social-link" href="http://www.github.com" target="_blank">
+              <a class="social-link" href="https://gitlab.com/mjaidi" target="_blank">
                 <i class="fab fa-gitlab"></i>
               </a>
-              <a class="social-link" href="http://www.github.com" target="_blank">
+              <a
+                class="social-link"
+                href="https://www.linkedin.com/in/majid-jaidi-839a8b44/"
+                target="_blank"
+              >
                 <i class="fab fa-linkedin"></i>
               </a>
             </div>
@@ -43,23 +47,25 @@
                 <span class="description-title">
                   <span class="description-bordered">{{staticText.about.website}} :</span>
                 </span>
-                <span class="description-text">www.website.io</span>
+                <span class="description-text">www.mjaidi.com</span>
               </h6>
               <h6 class="description-wrapper">
                 <span class="description-title">
                   <span class="description-bordered">{{staticText.about.email}} :</span>
                 </span>
-                <span class="description-text">majid.jaidi@gmail.com</span>
+                <span class="description-text">majidj.auto@gmail.com</span>
               </h6>
               <h6 class="description-wrapper">
                 <span class="description-title">
                   <span class="description-bordered">{{staticText.about.phone}} :</span>
                 </span>
-                <span class="description-text">+212 663 33 44 44</span>
+                <span class="description-text">+212 663 44 44 44</span>
               </h6>
               <div class="button-wrapper">
                 <button class="btn contact-btn">{{staticText.about.contact}}</button>
-                <button class="btn cv-btn">{{staticText.about.cv}}</button>
+                <button class="btn cv-btn">
+                  <a href="CV-2019v-2.pdf" target="_blank">{{staticText.about.cv}}</a>
+                </button>
               </div>
             </div>
           </v-flex>

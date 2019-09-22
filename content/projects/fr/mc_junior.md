@@ -1,5 +1,5 @@
 ---
-title: MasterChef Junior French
+title: MasterChef Junior plateforme d'inscription
 published: true
 tags: ['Ruby', 'Rails', 'Vue.js', 'Javascript','Vuetify', 'Bootstrap', 'HTML', 'CSS', 'Heroku', 'Postgres']
 lang: 'fr'

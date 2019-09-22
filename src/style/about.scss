@@ -29,7 +29,7 @@
         }
         .about-text {
             margin: 3rem 3rem;
-            white-space: pre-wrap;
+            white-space: pre-line;
             font-size: 1.2rem;
             font-weight: lighter;
             text-align: justify;
@@ -75,6 +75,13 @@
             }
         }
         .cv-btn {
+            a {
+                text-decoration: none;
+                color: inherit;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
             margin-left: 2rem;
             color: white;
             background: $yellow;

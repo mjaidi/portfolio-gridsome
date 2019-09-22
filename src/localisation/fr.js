@@ -11,32 +11,38 @@ export default {
     sub2: "Freelancer"
   },
   about: {
-    title: "A propos de moi",
-    subtitle: "Développeur, Entreprenant, Créatif",
-    description:
-      "Praesent ut tortor consectetur, semper sapien non, lacinia augue. Aenean arcu libero, facilisis et nisi non, tempus faucibus tortor. Mauris vel nulla aliquam, pellentesque enim ac, faucibus tortor. Nulla odio nibh, cursus sit amet urna id, dignissim euismod augue. \n\n Duis sollicitudin, libero porttitor rutrum ultrices, turpis lorem fermentum justo, quis ornare augue tortor non est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+    title: "About me",
+    subtitle: "Developer, Doer, Creative Thinker",
+    description: `After having successfuly tried out many different carrer options I recently fell in love with web developement and the technology sector.  \n
+      I am passionate about learning new things and adapting to the latest technologies and trends in order to provide the best experience for the end user. \n
+      I am a well organized, independent, problem solver with high attention to detail. Fan of outdoors activities, hikes, travel, and meeting new people wherever I go.\n
+      I am interested in the entire web developement spectrum, from software architecture to UX and UI design. I look forwards to working on interesting projects with inspiring people
+      `,
     age: "Age",
     residence: "Residence",
-    website: "Site Web",
+    website: "Website",
     email: "Email",
-    phone: "Téléphone",
-    contact: "Contactez moi",
-    cv: "Téléchargez CV",
-    education: "Mon Education",
-    experience: "Mon Experience",
-    skills: "Mes Compétences",
+    phone: "Phone",
+    contact: "Contact me",
+    cv: "Download CV",
+    education: "My Education",
+    experience: "My Experience",
+    skills: "My Skills",
     wagonTitle: "Le Wagon Coding Bootcamp",
     epflTitle: "Ecole Polytechnique Fédérale Lausanne (EPFL)",
     hopkinsTitle: "Johns Hopkins University",
     freelanceTitle: "Freelance Web Developement",
     patibisTitle: "Patibis SARL",
     pwcTitle: "Strategy & (formerly Booz & Company)",
-    wagonContent: `a`,
-    epflContent: `a`,
-    hopkinsContent: `a`,
-    freelanceContent: `a`,
-    patibisContent: `a`,
-    pwcContent: `a`
+    wagonContent: `Ruby on Rails, HTML, CSS, Javascript`,
+    epflContent: `Masters in Civil Engineering \nMinor in Business and Enterpreneurship`,
+    hopkinsContent: `Bachelors in Civil Engineering`,
+    freelanceContent: `Subscription management platform for TV Show
+Management software for Insurance Broker
+Platform for Art Gallery Management
+Corporate and personal websites`,
+    patibisContent: `Building Custom ERP with Filemaker for Pastry Business`,
+    pwcContent: `Business consulting and market entry strategy for various large companies in african markets`
   },
   projects: {
     title: "Projets",

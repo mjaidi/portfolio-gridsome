@@ -1,16 +1,16 @@
 ---
-title: Artket English
+title: Le Wagon French
 published: true
 tags: ['Ruby', 'Rails', 'Javascript', 'Bootstrap', 'HTML', 'CSS', 'Heroku', 'Postgres']
-lang: 'en'
+lang: 'fr'
 images:
-  - image: ../images/artket.png
-  - image: ../images/artket.png
+  - image: ../images/lewagon.png
 canonical_url: false
 description: 'Lorem ipsum'
-website: 'artket1.herokuapp.com'
-date: '10/2018'
-order: 4
+website: 'lewagon.com'
+date: '8/2018'
+order: 3
+
 ---
 
 Readability, however, is emphasized above all else. A Markdown-formatted

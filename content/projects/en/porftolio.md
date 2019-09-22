@@ -1,16 +1,15 @@
 ---
-title: Artket English
+title: Portfolio English
 published: true
-tags: ['Ruby', 'Rails', 'Javascript', 'Bootstrap', 'HTML', 'CSS', 'Heroku', 'Postgres']
+tags: [ 'Vue.js','Vuetify', 'Bootstrap', 'HTML', 'CSS', 'Gridsome', 'Netlify']
 lang: 'en'
 images:
-  - image: ../images/artket.png
-  - image: ../images/artket.png
+  - image: ../images/portfolio.png
 canonical_url: false
 description: 'Lorem ipsum'
-website: 'artket1.herokuapp.com'
-date: '10/2018'
-order: 4
+website: ''
+date: '10/2019'
+order: 8
 ---
 
 Readability, however, is emphasized above all else. A Markdown-formatted

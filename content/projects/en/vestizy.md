@@ -9,6 +9,8 @@ images:
 canonical_url: false
 description: "Lorem ipsum"
 website: 'vestizy1.herokuapp.com'
+date: '1/2019'
+order: 6
 
 ---
 

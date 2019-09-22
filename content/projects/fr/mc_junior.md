@@ -9,6 +9,8 @@ images:
 canonical_url: false
 description: "Lorem ipsum"
 website: 'www.masterchefmaroc.ma'
+date: '7/2018'
+order: 2
 
 ---
 

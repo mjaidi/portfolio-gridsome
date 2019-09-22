@@ -9,6 +9,8 @@ images:
 canonical_url: false
 description: "Lorem ipsum"
 website: 'bidnbill.herokuapp.com'
+date: '6/2019'
+order: 5
 
 ---
 

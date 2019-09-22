@@ -79,21 +79,24 @@ export default {
 
 <static-query>
 query Projects{
-  projects: allProject(filter: { published: { eq: true }}) {
+  projects: allProject(filter: { published: { eq: true }}, sortBy: "order", order: ASC)
+   {
     edges {
       node {
         id
         title
         lang
         content
+        website
+        date
+        order
         tags {
           id
         }
-        website
         description
         images {
-          preview: image (width: 400, height: 400, fit: cover)
-          image (width: 950, height: 500, fit: cover)
+          preview: image (width: 300, height: 400, fit: outside)
+          image (width: 770, height: 380)
         }
         ...on Project {
             id

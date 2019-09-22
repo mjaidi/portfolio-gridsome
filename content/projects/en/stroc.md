@@ -9,6 +9,8 @@ images:
 canonical_url: false
 description: "Lorem ipsum"
 website: 'www.stroc.com'
+date: '4/2019'
+order: 7
 
 ---
 

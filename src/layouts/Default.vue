@@ -1,10 +1,10 @@
 <template>
   <v-app>
-    <transition name="position">
+    <transition name="position" v-show="!isMobile && activeSidebar">
       <Sidebar v-on:currentLanguage="currentLanguage" v-show="!isMobile && activeSidebar" />
     </transition>
     <MobileMenu v-on:currentLanguage="currentLanguage" v-show="isMobile" />
-    <transition name="position">
+    <transition name="position" v-show="!isMobile && activeSidebar">
       <v-btn
         v-show="!isMobile && activeSidebar"
         class="btn-sidebar btn-close-sidebar"

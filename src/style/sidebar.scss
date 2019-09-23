@@ -1,12 +1,13 @@
 #sidebar {
     background: $dark;
     color: white;
-    transition: left 0.3s ease-in;
+    transition: all 0.3s ease-in;
     position: fixed;
     left: 0px;
-    &.position-enter,
-    .position-leave {
+    visibility: visible;
+    &.invisible {
         left: -220px;
+        visibility: hidden;
     }
     .relative-sidebar {
         position: relative;

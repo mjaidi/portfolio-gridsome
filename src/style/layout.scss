@@ -117,10 +117,11 @@
       &.btn-close-sidebar {
           top: 67vh;
           left: 185px;
-          transition: left 0.3s ease-in;
-          &.position-enter,
-          .position-leave {
+          transition: all 0.3s ease-in;
+          visibility: visible;
+          &.invisible {
               left: -35px;
+              visibility: hidden;
           }
       }
       &.btn-expand-sidebar {
@@ -135,5 +136,4 @@
   
   #main {
       transition: 0.3s ease-in;
-      transition-delay: 0.1s;
   }

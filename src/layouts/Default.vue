@@ -1,18 +1,17 @@
 <template>
   <v-app>
-    <transition name="position">
-      <Sidebar v-on:currentLanguage="currentLanguage" v-if="!isMobile && activeSidebar" />
-    </transition>
+    <Sidebar
+      v-on:currentLanguage="currentLanguage"
+      :class="{invisible: !isMobile && !activeSidebar}"
+    />
     <MobileMenu v-on:currentLanguage="currentLanguage" v-show="isMobile" />
-    <transition name="position">
-      <v-btn
-        v-if="!isMobile && activeSidebar"
-        class="btn-sidebar btn-close-sidebar"
-        @click="toggleSidebar()"
-      >
-        <v-icon>mdi-chevron-left</v-icon>
-      </v-btn>
-    </transition>
+    <v-btn
+      :class="{'btn-sidebar':true, 'btn-close-sidebar': true, invisible: (!isMobile && !activeSidebar)}"
+      @click="toggleSidebar()"
+    >
+      <v-icon>mdi-chevron-left</v-icon>
+    </v-btn>
+
     <v-btn
       v-show="!isMobile && !activeSidebar"
       class="btn-sidebar btn-expand-sidebar"
@@ -21,11 +20,9 @@
       <v-icon>mdi-chevron-right</v-icon>
     </v-btn>
 
-    <transition name="slide">
-      <main :class="{offsetWidth: !isMobile && activeSidebar}" id="main">
-        <slot v-bind:lang="lang" v-bind:isMobile="isMobile" v-bind:activeSidebar="activeSidebar"></slot>
-      </main>
-    </transition>
+    <main :class="{offsetWidth: !isMobile && activeSidebar}" id="main">
+      <slot v-bind:lang="lang" v-bind:isMobile="isMobile" v-bind:activeSidebar="activeSidebar"></slot>
+    </main>
     <v-btn class="btn-sidebar btn-scroll-sidebar" @click="scrollTop()" v-show="!isMobile">
       <v-icon>mdi-chevron-up</v-icon>
     </v-btn>
@@ -83,10 +80,5 @@ export default {
 <style>
 .offsetWidth {
   margin-left: 220px;
-}
-
-.slide-enter,
-.slide-leave {
-  width: 0;
 }
 </style>

@@ -1,9 +1,17 @@
 #sidebar {
     background: $dark;
     color: white;
+    transition: left 0.3s ease-in;
+    position: fixed;
+    left: 0px;
+    &.position-enter,
+    .position-leave {
+        left: -220px;
+    }
     .relative-sidebar {
         position: relative;
         min-height: 90vh;
+        background: inherit;
     }
     .isActive {
         color: $yellow;

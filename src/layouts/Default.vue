@@ -1,16 +1,18 @@
 <template>
   <v-app>
-    <transition name="fade" mode="in-out" appear>
+    <transition name="position">
       <Sidebar v-on:currentLanguage="currentLanguage" v-show="!isMobile && activeSidebar" />
     </transition>
     <MobileMenu v-on:currentLanguage="currentLanguage" v-show="isMobile" />
-    <v-btn
-      v-show="!isMobile && activeSidebar"
-      class="btn-sidebar btn-close-sidebar"
-      @click="toggleSidebar()"
-    >
-      <v-icon>mdi-chevron-left</v-icon>
-    </v-btn>
+    <transition name="position">
+      <v-btn
+        v-show="!isMobile && activeSidebar"
+        class="btn-sidebar btn-close-sidebar"
+        @click="toggleSidebar()"
+      >
+        <v-icon>mdi-chevron-left</v-icon>
+      </v-btn>
+    </transition>
     <v-btn
       v-show="!isMobile && !activeSidebar"
       class="btn-sidebar btn-expand-sidebar"
@@ -18,8 +20,9 @@
     >
       <v-icon>mdi-chevron-right</v-icon>
     </v-btn>
-    <transition name="fade" appear>
-      <main :class="{offsetWidth: !isMobile && activeSidebar}">
+
+    <transition name="slide">
+      <main :class="{offsetWidth: !isMobile && activeSidebar}" id="main">
         <slot v-bind:lang="lang" v-bind:isMobile="isMobile" v-bind:activeSidebar="activeSidebar"></slot>
       </main>
     </transition>
@@ -81,11 +84,9 @@ export default {
 .offsetWidth {
   margin-left: 220px;
 }
-.fade-enter-active {
-  transition: opacity 1s;
-}
 
-.fade-enter {
-  opacity: 0;
+.slide-enter,
+.slide-leave {
+  width: 0;
 }
 </style>

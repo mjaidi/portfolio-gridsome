@@ -13,10 +13,10 @@ export default {
   about: {
     title: "About me",
     subtitle: "Developer, Doer, Creative Thinker",
-    description: `After having successfuly tried out many different carrer options I recently fell in love with web developement and the technology sector.  \n
+    description: `After having successfully tried out many different carrer options I recently fell in love with web development and the technology sector.  \n
       I am passionate about learning new things and adapting to the latest technologies and trends in order to provide the best experience for the end user. \n
       I am a well organized, independent, problem solver with high attention to detail. Fan of outdoors activities, hikes, travel, and meeting new people wherever I go.\n
-      I am interested in the entire web developement spectrum, from software architecture to UX and UI design. I look forwards to working on interesting projects with inspiring people
+      I am interested in the entire web development spectrum, from software architecture to UX and UI design. I look forwards to working on interesting projects with inspiring people
       `,
     age: "Age",
     residence: "Residence",
@@ -31,7 +31,7 @@ export default {
     wagonTitle: "Le Wagon Coding Bootcamp",
     epflTitle: "Ecole Polytechnique Fédérale Lausanne (EPFL)",
     hopkinsTitle: "Johns Hopkins University",
-    freelanceTitle: "Freelance Web Developement",
+    freelanceTitle: "Freelance Web Development",
     patibisTitle: "Patibis SARL",
     pwcTitle: "Strategy & (formerly Booz & Company)",
     wagonContent: `Ruby on Rails, HTML, CSS, Javascript`,

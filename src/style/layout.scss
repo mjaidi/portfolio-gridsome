@@ -117,6 +117,11 @@
       &.btn-close-sidebar {
           top: 67vh;
           left: 185px;
+          transition: left 0.3s ease-in;
+          &.position-enter,
+          .position-leave {
+              left: -35px;
+          }
       }
       &.btn-expand-sidebar {
           top: 67vh;
@@ -126,4 +131,9 @@
           top: 93vh;
           left: 93vw;
       }
+  }
+  
+  #main {
+      transition: 0.3s ease-in;
+      transition-delay: 0.1s;
   }

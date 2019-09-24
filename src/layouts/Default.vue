@@ -17,8 +17,13 @@
       <v-icon>mdi-chevron-right</v-icon>
     </v-btn>
 
-    <main :class="{offsetWidth: !isMobile && activeSidebar}" id="main">
-      <slot v-bind:lang="lang" v-bind:isMobile="isMobile" v-bind:activeSidebar="activeSidebar"></slot>
+    <main :class="{offsetWidth: !isMobile && activeSidebar}">
+      <slot
+        v-bind:lang="lang"
+        v-bind:isMobile="isMobile"
+        v-bind:activeSidebar="activeSidebar"
+        id="main"
+      ></slot>
     </main>
     <v-btn class="btn-sidebar btn-scroll-sidebar" @click="scrollTop()" v-show="!isMobile">
       <v-icon>mdi-chevron-up</v-icon>
@@ -62,9 +67,12 @@ export default {
     },
     handleResize() {
       if (typeof window !== `undefined`) {
-        window.innerWidth < 1000
-          ? (this.isMobile = true)
-          : (this.isMobile = false);
+        if (window.innerWidth < 1000) {
+          this.isMobile = true;
+          this.activeSidebar = false;
+        } else {
+          this.isMobile = false;
+        }
       }
     },
     currentLanguage(lang) {

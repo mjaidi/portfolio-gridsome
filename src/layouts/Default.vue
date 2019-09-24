@@ -69,6 +69,7 @@ export default {
       } else {
         this.isMobile = true;
       }
+      this.activeSidebar = true;
     },
     currentLanguage(lang) {
       this.lang = lang;

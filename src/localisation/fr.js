@@ -6,7 +6,7 @@ export default {
     contact: "Contact"
   },
   home: {
-    sub_start: "Je suis un",
+    sub_start: "Je suis",
     sub1: "Dévelopeur Web",
     sub2: "Freelancer"
   },

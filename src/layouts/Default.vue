@@ -20,7 +20,10 @@
       <v-icon>mdi-chevron-right</v-icon>
     </v-btn>
 
-    <main :class="{offsetWidth: !isMobile && activeSidebar}" id="main">
+    <main
+      :class="{offsetWidth: !isMobile && activeSidebar, initialOffset: !isMobile && !activeSidebar}"
+      id="main"
+    >
       <slot v-bind:lang="lang" v-bind:isMobile="isMobile" v-bind:activeSidebar="activeSidebar"></slot>
     </main>
     <v-btn class="btn-sidebar btn-scroll-sidebar" @click="scrollTop()" v-show="!isMobile">
@@ -69,7 +72,6 @@ export default {
       } else {
         this.isMobile = true;
       }
-      this.activeSidebar = true;
     },
     currentLanguage(lang) {
       this.lang = lang;
@@ -80,6 +82,9 @@ export default {
 
 <style>
 .offsetWidth {
+  margin-left: 220px;
+}
+.initialOffset {
   margin-left: 220px;
 }
 </style>

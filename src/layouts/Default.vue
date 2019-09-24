@@ -44,7 +44,7 @@ export default {
     if (typeof window !== `undefined`) {
       window.addEventListener("resize", this.handleResize);
     }
-    this.isMobile = false;
+    this.isMobile = true;
     this.activeSidebar = true;
     this.handleResize();
   },

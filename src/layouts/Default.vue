@@ -45,12 +45,10 @@ export default {
     isMobile: false,
     activeSidebar: true
   }),
-  created() {
+  mounted() {
     if (typeof window !== `undefined`) {
       window.addEventListener("resize", this.handleResize);
     }
-    this.isMobile = true;
-    this.activeSidebar = true;
     this.handleResize();
   },
   destroyed() {
@@ -69,7 +67,6 @@ export default {
       if (typeof window !== `undefined`) {
         if (window.innerWidth < 1000) {
           this.isMobile = true;
-          this.activeSidebar = false;
         } else {
           this.isMobile = false;
         }

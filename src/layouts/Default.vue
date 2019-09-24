@@ -1,12 +1,9 @@
 <template>
   <v-app>
-    <Sidebar
-      v-on:currentLanguage="currentLanguage"
-      :class="{invisible: !isMobile && !activeSidebar}"
-    />
+    <Sidebar v-on:currentLanguage="currentLanguage" :class="{visible: !isMobile && activeSidebar}" />
     <MobileMenu v-on:currentLanguage="currentLanguage" v-show="isMobile" />
     <v-btn
-      :class="{'btn-sidebar':true, 'btn-close-sidebar': true, invisible: (!isMobile && !activeSidebar)}"
+      :class="{'btn-sidebar':true, 'btn-close-sidebar': true, visible: (!isMobile && activeSidebar)}"
       @click="toggleSidebar()"
     >
       <v-icon>mdi-chevron-left</v-icon>
@@ -47,8 +44,9 @@ export default {
     if (typeof window !== `undefined`) {
       window.addEventListener("resize", this.handleResize);
     }
-    this.handleResize();
+    this.isMobile = false;
     this.activeSidebar = true;
+    this.handleResize();
   },
   destroyed() {
     this.removeEventListener("resize", this.handleResize);
@@ -67,8 +65,6 @@ export default {
         window.innerWidth < 1000
           ? (this.isMobile = true)
           : (this.isMobile = false);
-      } else {
-        this.isMobile = true;
       }
     },
     currentLanguage(lang) {

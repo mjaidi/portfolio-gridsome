@@ -116,12 +116,12 @@
       }
       &.btn-close-sidebar {
           top: 67vh;
-          left: 185px;
           transition: all 0.3s ease-in;
-          visibility: visible;
-          &.invisible {
-              left: -35px;
-              visibility: hidden;
+          visibility: hidden;
+          left: -35px;
+          &.visible {
+              left: 185px;
+              visibility: visible;
           }
       }
       &.btn-expand-sidebar {

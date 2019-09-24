@@ -3,11 +3,11 @@
     color: white;
     transition: all 0.3s ease-in;
     position: fixed;
-    left: 0px;
-    visibility: visible;
-    &.invisible {
-        left: -220px;
-        visibility: hidden;
+    left: -220px;
+    visibility: hidden;
+    &.visible {
+        left: 0px;
+        visibility: visible;
     }
     .relative-sidebar {
         position: relative;

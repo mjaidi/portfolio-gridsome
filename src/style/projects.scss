@@ -130,3 +130,13 @@
         }
     }
 }
+
+.light-gallery__image img {
+    max-width: 100vw;
+}
+
+.img-expand {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}

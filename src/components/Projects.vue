@@ -95,8 +95,8 @@ query Projects{
         }
         description
         images {
-          preview: image (width: 300, height: 400, fit: outside)
-          image (width: 770, height: 380)
+          preview: image (width: 700, height: 400, fit: outside)
+          image
         }
         ...on Project {
             id

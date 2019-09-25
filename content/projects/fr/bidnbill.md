@@ -4,7 +4,15 @@ published: true
 tags: ['Ruby', 'Rails', 'Vue.js', 'Javascript','Vuetify', 'Bootstrap', 'HTML', 'CSS', 'Heroku', 'Postgres']
 lang: 'fr'
 images:
-  - image: ../images/bid-bill.png
+  - image: ../images/bid-bill1.png
+  - image: ../images/bid-bill2.png
+  - image: ../images/bid-bill3.png
+  - image: ../images/bid-bill4.png
+  - image: ../images/bid-bill5.png
+  - image: ../images/bid-bill6.png
+  - image: ../images/bid-bill7.png
+  - image: ../images/bid-bill8.png
+  - image: ../images/bid-bill9.png
 canonical_url: false
 description: "Lorem ipsum"
 website: 'bidnbill.herokuapp.com'

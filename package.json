@@ -16,6 +16,8 @@
         "style-loader": "^0.23.1",
         "stylus": "^0.54.5",
         "stylus-loader": "^3.0.2",
+        "vue-light-gallery": "^1.0.1",
+        "vue-loading-overlay": "^3.2.0",
         "vue-typed-js": "^0.1.2",
         "vuelidate": "^0.7.4",
         "vuetify": "^1.5.16"

@@ -1,5 +1,14 @@
 <template>
   <v-app>
+    <loading
+      :active.sync="isLoading"
+      :is-full-page="true"
+      loader="dots"
+      :height="100"
+      background-color="#fff"
+      :opacity="1"
+      color="#E5BE24"
+    ></loading>
     <Sidebar v-on:currentLanguage="currentLanguage" :class="{visible: !isMobile && activeSidebar}" />
     <MobileMenu v-on:currentLanguage="currentLanguage" v-show="isMobile" />
     <v-btn
@@ -34,22 +43,33 @@
 <script>
 import Sidebar from "./navigation/Sidebar";
 import MobileMenu from "./navigation/MobileMenu";
+// Import component
+import Loading from "vue-loading-overlay";
+// Import stylesheet
+import "vue-loading-overlay/dist/vue-loading.css";
+
 export default {
   name: "Default",
   components: {
     Sidebar,
-    MobileMenu
+    MobileMenu,
+    Loading
   },
   data: () => ({
     lang: "en",
     isMobile: false,
-    activeSidebar: true
+    activeSidebar: true,
+    isLoading: true
   }),
+
   mounted() {
     if (typeof window !== `undefined`) {
       window.addEventListener("resize", this.handleResize);
     }
     this.handleResize();
+    setTimeout(() => {
+      this.isLoading = false;
+    }, 2000);
   },
   destroyed() {
     this.removeEventListener("resize", this.handleResize);

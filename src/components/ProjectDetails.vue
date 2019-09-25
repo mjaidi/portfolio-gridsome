@@ -2,10 +2,19 @@
   <v-card>
     <v-card-title class="headline">{{activeProject.title}}</v-card-title>
     <v-icon @click="$emit('close')" class="close-icon">mdi-close</v-icon>
+    <LightGallery
+      :images="activeProject.images.map(i => i.image.src)"
+      :index="index"
+      :disable-scroll="true"
+      @close="index = null"
+    />
+
     <v-carousel hide-delimiter-background :cycle="cycle" height="400" :continuous="false">
       <v-carousel-item v-for="(image, i) in activeProject.images" :key="i">
         <v-sheet height="100%" tile>
           <v-layout row wrap class="fill-height" align="center" justify="center">
+            <v-icon @click="index = i" class="img-expand">open_with</v-icon>
+
             <img :src="image.image.src" alt class="project-dialog-image" />
           </v-layout>
         </v-sheet>
@@ -36,12 +45,18 @@
 </template>
 
 <script>
+import { LightGallery } from "vue-light-gallery";
+
 export default {
   name: "ProjectDetails",
   props: ["activeProject"],
   data: () => ({
-    cycle: false
+    cycle: false,
+    index: null
   }),
+  components: {
+    LightGallery
+  },
   methods: {
     color(tag) {
       switch (tag.id) {

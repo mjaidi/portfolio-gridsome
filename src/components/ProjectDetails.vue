@@ -4,7 +4,6 @@
     <v-icon @click="$emit('close')" class="close-icon">mdi-close</v-icon>
     <ClientOnly>
       <LightGallery
-        &#x3C;LightGallery
         :images="activeProject.images.map(i => i.image.src)"
         :index="index"
         :disable-scroll="true"
@@ -51,6 +50,12 @@
 export default {
   name: "ProjectDetails",
   props: ["activeProject"],
+  components: {
+    LightGallery: () =>
+      import("vue-light-gallery")
+        .then(m => m.LightGallery)
+        .catch()
+  },
   data: () => ({
     cycle: false,
     index: null

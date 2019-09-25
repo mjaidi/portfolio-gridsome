@@ -45,8 +45,6 @@
 </template>
 
 <script>
-import { LightGallery } from "vue-light-gallery";
-
 export default {
   name: "ProjectDetails",
   props: ["activeProject"],
@@ -54,9 +52,6 @@ export default {
     cycle: false,
     index: null
   }),
-  components: {
-    LightGallery
-  },
   methods: {
     color(tag) {
       switch (tag.id) {

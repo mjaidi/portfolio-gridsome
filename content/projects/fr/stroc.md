@@ -1,5 +1,5 @@
 ---
-title: Stroc site vitrine
+title: Stroc Site Vitrine
 published: true
 tags: ['Wordpress', 'HTML', 'CSS']
 lang: 'fr'

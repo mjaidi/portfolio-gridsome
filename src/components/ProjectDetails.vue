@@ -2,12 +2,15 @@
   <v-card>
     <v-card-title class="headline">{{activeProject.title}}</v-card-title>
     <v-icon @click="$emit('close')" class="close-icon">mdi-close</v-icon>
-    <LightGallery
-      :images="activeProject.images.map(i => i.image.src)"
-      :index="index"
-      :disable-scroll="true"
-      @close="index = null"
-    />
+    <ClientOnly>
+      <LightGallery
+        &#x3C;LightGallery
+        :images="activeProject.images.map(i => i.image.src)"
+        :index="index"
+        :disable-scroll="true"
+        @close="index = null"
+      />
+    </ClientOnly>
 
     <v-carousel hide-delimiter-background :cycle="cycle" height="400" :continuous="false">
       <v-carousel-item v-for="(image, i) in activeProject.images" :key="i">

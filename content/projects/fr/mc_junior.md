@@ -5,7 +5,6 @@ tags: ['Ruby', 'Rails', 'Vue.js', 'Javascript','Vuetify', 'Bootstrap', 'HTML', '
 lang: 'fr'
 images:
   - image: ../images/mcjunior.png
-  - image: ../images/artket.png
 canonical_url: false
 description: "Lorem ipsum"
 website: 'www.masterchefmaroc.ma'

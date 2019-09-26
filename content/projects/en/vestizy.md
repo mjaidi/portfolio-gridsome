@@ -1,5 +1,5 @@
 ---
-title: Vestizy website
+title: Vestizy - commercial website
 published: true
 tags: ['Ruby', 'Rails', 'Javascript', 'Bootstrap', 'HTML', 'CSS', 'Heroku', 'Postgres']
 lang: 'en'
@@ -19,6 +19,12 @@ order: 6
 
 ---
 
-Commercial website for new construction management and rental company
+Vestizy is a 2 part project:
+
+
+First, Vestizy is a commercial website showcasing the expertise and work of a team of young real-estate entrepreneurs who help people find, renovate, and rent real-estate. For this first part there is a single landing page with a corresponding custom CMS to manage content and SEO.
+
+
+Second, there will be a members area where customers will have access to real time information about their project.
 
 

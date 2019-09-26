@@ -13,13 +13,14 @@ export default {
   about: {
     title: "About me",
     subtitle: "Developer, Doer, Creative Thinker",
-    description: `After having successfully tried out many different carrer options I recently fell in love with web development and the technology sector.  \n
-      I am passionate about learning new things and adapting to the latest technologies and trends in order to provide the best experience for the end user. \n
-      I am a well organized, independent, problem solver with high attention to detail. Fan of outdoors activities, hikes, travel, and meeting new people wherever I go.\n
-      I am interested in the entire web development spectrum, from software architecture to UX and UI design. I look forwards to working on interesting projects with inspiring people
+    description: `Following enriching experiences in consulting and civil engineering, I have recently fell in love with web development and the technology sector. \n
+    I am passionate about learning new things and adapting to the latest technologies and trends in order to provide the best experience for end users. \n
+    I am a well organised, independent, problem solver with high attention to detail.  I am interested in the entire web development spectrum, from software architecture to UX and UI design. \n
+    Fan of outdoor activities, hikes, travels, and meeting new people wherever I go.  I look forward to working on interesting projects with inspiring people around the world.
       `,
     age: "Age",
     residence: "Residence",
+    address: "Casablanca, Morocco",
     website: "Website",
     email: "Email",
     phone: "Phone",
@@ -33,7 +34,7 @@ export default {
     hopkinsTitle: "Johns Hopkins University",
     freelanceTitle: "Freelance Web Development",
     patibisTitle: "Patibis SARL",
-    pwcTitle: "Strategy & (formerly Booz & Company)",
+    pwcTitle: "PWC Strategy & (formerly Booz & Company)",
     wagonContent: `Ruby on Rails, HTML, CSS, Javascript`,
     epflContent: `Masters in Civil Engineering \nMinor in Business and Enterpreneurship`,
     hopkinsContent: `Bachelors in Civil Engineering`,
@@ -46,7 +47,9 @@ Corporate and personal websites`,
   },
   projects: {
     title: "Portfolio",
-    subtitle: "A selection of my recent work"
+    subtitle: "A selection of my recent work",
+    website: "Website",
+    technology: "Technology"
   },
   contact: {
     title: "Contact me",

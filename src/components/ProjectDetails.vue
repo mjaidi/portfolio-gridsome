@@ -24,12 +24,12 @@
     </v-carousel>
 
     <div class="project-subtitle" v-show="activeProject.website !== ''">
-      <h3>Website</h3>
+      <h3>{{staticText.projects.website}}</h3>
       <a :href="'http://' + activeProject.website" target="_blank">{{activeProject.website}}</a>
     </div>
 
     <div class="project-subtitle">
-      <h3>Technology</h3>
+      <h3>{{staticText.projects.technology}}</h3>
       <div class="my-3 tag-wrapper">
         <span v-for="tag in activeProject.tags" :class="['tag', color(tag)]">{{tag.id}}</span>
       </div>
@@ -47,6 +47,8 @@
 </template>
 
 <script>
+import fr from "../localisation/fr.js";
+import en from "../localisation/en.js";
 export default {
   name: "ProjectDetails",
   props: ["activeProject"],
@@ -60,6 +62,12 @@ export default {
     cycle: false,
     index: null
   }),
+  computed: {
+    staticText() {
+      if (this.activeProject.lang === "en") return en;
+      if (this.activeProject.lang === "fr") return fr;
+    }
+  },
   methods: {
     color(tag) {
       switch (tag.id) {

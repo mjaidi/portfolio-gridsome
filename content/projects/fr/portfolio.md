@@ -1,6 +1,6 @@
 ---
 title: Portfolio - fr
-published: true
+published: false
 tags: [ 'Vue.js','Vuetify', 'Bootstrap', 'HTML', 'CSS', 'Gridsome', 'Netlify']
 lang: 'fr'
 images:

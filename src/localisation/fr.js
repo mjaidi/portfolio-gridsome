@@ -12,41 +12,44 @@ export default {
   },
   about: {
     title: "A propos de moi",
-    subtitle: "Developer, Doer, Creative Thinker",
-    description: `Après avoir testé avec succès de nombreuses options de carrière, je suis récemment tombé amoureux du développement web et du secteur de la technologie.  \n
-    Je suis passionné par l'apprentissage en continue et l'utilisation des dernières technologies afin d'offrir la meilleure expérience possible à l'utilisateur final. \n
-     Je suis une personne organisée, indépendante, capable de résoudre les problèmes avec une grande attention aux détails. Fan d'activités de plein air, de randonnées, de voyages et de rencontres partout où je vais.\n
-     Je m'intéresse à tout le spectre du développement web, de l'architecture logicielle au design UX et UI. J'ai hâte de travailler sur des projets intéressants avec des personnes inspirantes.
-   `,
+    subtitle: "Développeur, Créatif",
+    description: `Après des expériences enrichissantes dans le conseil et le génie civil, j’ai récemment trouvé une nouvelle passion dans le monde du développement web et la technologie. \n
+    J'ai la soif d'apprendre de nouvelles choses et de m'adapter aux dernières technologies et tendances afin d'offrir la meilleure expérience possible aux utilisateurs finaux. \n
+    Je suis une personne bien organisée, indépendante, qui résout les problèmes avec une grande attention aux détails.  Je m'intéresse à tout le spectre du développement web, de l'architecture logicielle au design UX et UI. \n
+    Fan d'activités de plein air, de randonnées, de voyages et de rencontres partout où je vais.  J'ai hâte de travailler sur des projets intéressants avec des gens inspirants du monde entier.
+    `,
     age: "Age",
     residence: "Résidence",
+    address: "Casablanca, Maroc",
     website: "Site Web",
     email: "Email",
     phone: "Téléphone",
     contact: "Contactez moi",
     cv: "Téléchargez CV",
     education: "Mon Education",
-    experience: "MOn Experience",
+    experience: "Mon Expérience",
     skills: "Mes Compétences",
     wagonTitle: "Le Wagon Coding Bootcamp",
     epflTitle: "Ecole Polytechnique Fédérale Lausanne (EPFL)",
     hopkinsTitle: "Johns Hopkins University",
     freelanceTitle: "Freelance Dévelopement Web",
     patibisTitle: "Patibis SARL",
-    pwcTitle: "Strategy & (formerly Booz & Company)",
+    pwcTitle: "PWC Strategy & (formerly Booz & Company)",
     wagonContent: `Ruby on Rails, HTML, CSS, Javascript`,
-    epflContent: `Masters in Civil Engineering \nMinor in Business and Enterpreneurship`,
-    hopkinsContent: `Bachelors in Civil Engineering`,
+    epflContent: `Masters en Génie Civil \nMineur en Business et Entreprenariat`,
+    hopkinsContent: `Bachelors en Génie Civil`,
     freelanceContent: `Plateforme d'inscription pour une emission TV (MasterChef)
-Soltion de géstion pour une agence d'assurance
+Solution de géstion pour une agence d'assurance
 Plateforme pour les galeries d'art
-Sites web personnels et professionelles`,
+Sites web personnels et professionnels`,
     patibisContent: `Concéption d'un ERP sur mesure avec Filemaker pour la gestion d'une patisserie`,
     pwcContent: `Conseil et stratégie de marché pour divers grandes sociétés sur le continent africain`
   },
   projects: {
     title: "Projets",
-    subtitle: "Une selection de mes réalisations récentes"
+    subtitle: "Une selection de mes réalisations récentes",
+    website: "Site Web",
+    technology: "Technologie"
   },
   contact: {
     title: "Contactez moi",

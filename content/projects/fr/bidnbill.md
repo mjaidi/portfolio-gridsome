@@ -1,6 +1,6 @@
 ---
 title: BidnBill plateforme de fournisseurs d'énergie
-published: true
+published: false
 tags: ['Ruby', 'Rails', 'Vue.js', 'Javascript','Vuetify', 'Bootstrap', 'HTML', 'CSS', 'Heroku', 'Postgres']
 lang: 'fr'
 images:

@@ -1,6 +1,6 @@
 ---
 title: BidnBill energy platform
-published: true
+published: false
 tags: ['Ruby', 'Rails', 'Vue.js', 'Javascript','Vuetify', 'Bootstrap', 'HTML', 'CSS', 'Heroku', 'Postgres']
 lang: 'en'
 images:

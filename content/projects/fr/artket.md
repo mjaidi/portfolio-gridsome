@@ -1,5 +1,5 @@
 ---
-title: Artket plateforme des galleries d'art
+title: Artket - plateforme d’art
 published: true
 tags: ['Ruby', 'Rails', 'Javascript', 'Bootstrap', 'HTML', 'CSS', 'Heroku', 'Postgres']
 lang: 'fr'
@@ -21,8 +21,10 @@ order: 4
 
 ---
 
-Artket is a platform for art galleries
-It is still at the mvp stage
+Artket est la première plateforme en ligne regroupant des galeries d'art à travers le Maroc. La plateforme présente des œuvres d'art provenant de plusieurs galeries dans différentes villes et permet d'effectuer des recherches par lieu et par catégorie. Les utilisateurs peuvent sauvegarder leurs œuvres d'art et obtenir plus tard des suggestions lorsque des œuvres similaires sont ajoutées au site. Les clients peuvent contacter les galeries de leur choix par le biais d'un système de messagerie interne afin de discuter des détails d'achat.
+
+
+Les galeries peuvent renforcer leur présence en ligne en créant un mini-site et en faisant la promotion d'événements et d'expositions à venir. Ils peuvent gérer leur présence par le biais d'une zone privée réservée aux membres où ils peuvent ajouter des œuvres d'art, des artistes et des expositions.
 
 
 

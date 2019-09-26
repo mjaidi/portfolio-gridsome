@@ -1,5 +1,5 @@
 ---
-title: Stroc Site Vitrine
+title: Stroc - site web commercial
 published: true
 tags: ['Wordpress', 'HTML', 'CSS']
 lang: 'fr'
@@ -19,6 +19,6 @@ order: 7
 
 ---
 
-Commercial website of large construction company
+Stroc est un site corporatif qui met en valeur l'expertise d'une des plus grandes entreprises de construction au Maroc. C'est un site statique disponible en français et en anglais avec un blog et un espace recrutement.
 
 

@@ -41,7 +41,7 @@
                 <span class="description-title">
                   <span class="description-bordered">{{staticText.about.residence}} :</span>
                 </span>
-                <span class="description-text">Casablanca, Morocco</span>
+                <span class="description-text">{{staticText.about.address}}</span>
               </h6>
               <h6 class="description-wrapper">
                 <span class="description-title">
@@ -59,7 +59,7 @@
                 <span class="description-title">
                   <span class="description-bordered">{{staticText.about.phone}} :</span>
                 </span>
-                <span class="description-text">+212 663 44 44 44</span>
+                <span class="description-text">+212 663 44 82 02</span>
               </h6>
               <div class="button-wrapper">
                 <button class="btn contact-btn">

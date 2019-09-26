@@ -1,5 +1,5 @@
 ---
-title: Stroc website
+title: Stroc - corporate website
 published: true
 tags: ['Wordpress', 'HTML', 'CSS']
 lang: 'en'
@@ -19,5 +19,6 @@ order: 7
 
 ---
 
-Commercial website of large construction company
+Stroc is a corporate website showcasing the expertise of one of the largest construction companies in Morocco. It is a static site available in French and English with a blog and a recruitment area.
+
 

@@ -10,7 +10,6 @@
       />
       <Contact v-bind:lang="slotProps.lang" />
     </Layout>
-    <img src="../../static/images/mj-long.jpeg" alt class="d-none" />
   </v-app>
 </template>
 
@@ -46,10 +45,6 @@ export default {
       {
         property: "og:description",
         content: "A consise portfolio of some of my best work"
-      },
-      {
-        property: "og:image",
-        content: "https://www.mjaidi.com/assets/img/mj-long.jpeg"
       }
     ]
   }

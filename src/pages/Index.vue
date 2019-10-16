@@ -47,7 +47,7 @@ export default {
       },
       {
         property: "og:image",
-        content: "mj-long.jpg"
+        content: "https://www.mjaidi.com/assets/static/images/mj-long.jpg"
       }
     ]
   }

@@ -66,7 +66,7 @@
                   <a href="#contact">{{staticText.about.contact}}</a>
                 </button>
                 <button class="btn cv-btn">
-                  <a href="CV-2019v-2.pdf" target="_blank">{{staticText.about.cv}}</a>
+                  <a href="CV-2019v-3.pdf" target="_blank">{{staticText.about.cv}}</a>
                 </button>
               </div>
             </div>

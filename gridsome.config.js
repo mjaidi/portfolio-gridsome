@@ -6,7 +6,7 @@
 
 module.exports = {
   siteName: "Majid's Portfolio",
-  siteDescription: "A sweet exhibition of some of my best work",
+  siteDescription: "A consise portfolio of some of my best work",
   siteUrl: "https://www.mjaidi.com",
   icon: "./static/images/myAvatar.png",
 

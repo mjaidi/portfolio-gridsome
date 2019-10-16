@@ -28,7 +28,28 @@ export default {
     Contact
   },
   metaInfo: {
-    title: "Porfolio"
+    meta: [
+      {
+        property: "og:title",
+        content: "Majid Jaidi's portfolio"
+      },
+      {
+        property: "og:type",
+        content: "website"
+      },
+      {
+        property: "og:url",
+        content: "https://www.mjaidi.com"
+      },
+      {
+        property: "og:description",
+        content: "A consise portfolio of some of my best work"
+      },
+      {
+        property: "og:image",
+        content: "mj-long.jpg"
+      }
+    ]
   }
 };
 </script>

@@ -17,7 +17,7 @@ canonical_url: false
 description: 'Lorem ipsum'
 website: 'artket1.herokuapp.com'
 date: '10/2018'
-order: 4
+order: 5
 ---
 
 Artket is the first online platform regrouping art galleries throughout Morocco. The platform showcases artwork from multiple galleries in different cities and makes the artwork searchable by location and category. Users can save artwork and later get suggestions when similar artwork is added to the website. Clients may contact the galleries of choice through an internal messaging system in order to discuss purchasing details.

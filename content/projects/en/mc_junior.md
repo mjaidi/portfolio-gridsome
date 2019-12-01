@@ -16,7 +16,7 @@ canonical_url: false
 description: 'Lorem ipsum'
 website: 'www.masterchefmaroc.ma'
 date: '7/2018'
-order: 2
+order: 3
 
 ---
 MasterChef Junior is a local tv show that was looking to streamline their casting process by building an online platform.

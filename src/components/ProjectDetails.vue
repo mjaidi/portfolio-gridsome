@@ -79,6 +79,10 @@ export default {
           return "blue-tag";
         case "Vue.js":
           return "blue-tag";
+        case "Gatsby":
+          return "blue-tag";
+        case "React.js":
+          return "blue-tag";
         case "React":
           return "blue-tag";
         case "Jest":
@@ -96,6 +100,8 @@ export default {
         case "Circle-Ci":
           return "green-tag";
         case "Netlify":
+          return "green-tag";
+        case "Cloudinary":
           return "green-tag";
         case "Wordpress":
           return "green-tag";

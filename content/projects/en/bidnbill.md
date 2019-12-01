@@ -20,7 +20,7 @@ canonical_url: false
 description: "Lorem ipsum"
 website: "bidnbill.herokuapp.com"
 date: "6/2019"
-order: 5
+order: 6
 ---
 
 BidnBill is a platform for matching customers with energy providers

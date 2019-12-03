@@ -7,7 +7,7 @@ export default {
   },
   home: {
     sub_start: "Je suis",
-    sub1: "Dévelopeur Web",
+    sub1: "Développeur Web",
     sub2: "Freelancer"
   },
   about: {

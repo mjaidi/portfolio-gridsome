@@ -54,9 +54,9 @@ export default {
   methods: {
     handleClose() {
       this.dialog = false
+      this.activeProject = {title: null, images: [], website: null, tags: [], lang: 'en'}
     },
     handleClick(object) {
-      console.log('clicked')
       this.dialog = true;
       this.activeProject = object;
     }
@@ -72,7 +72,6 @@ export default {
     this.projects = this.$static.projects.edges.filter(
       e => e.node.lang === this.lang
     );
-    this.activeProject = this.projects[0].node
   }
 };
 </script>

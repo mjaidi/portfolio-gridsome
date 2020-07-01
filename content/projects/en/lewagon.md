@@ -16,6 +16,7 @@ tags:
 website: lewagon.com
 date: 8/2018
 description: Lorem ipsum
+featured_image: https://res.cloudinary.com/mjedi/image/upload/v1593605896/portfolio/lewagon.png
 images:
   - image: https://res.cloudinary.com/mjedi/image/upload/v1593605896/portfolio/lewagon.png
 ---

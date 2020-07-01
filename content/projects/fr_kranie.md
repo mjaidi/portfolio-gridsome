@@ -4,7 +4,8 @@ published: true
 lang: fr
 order: 0
 tags:
-  - Ruby on Rails
+  - Ruby
+  - Rails
   - HTML
   - CSS
   - Javascript
@@ -14,7 +15,8 @@ website: www.kranie.com
 date: 04/2020
 featured_image: https://res.cloudinary.com/mjedi/image/upload/v1593609567/portfolio/Screen_Shot_2020-07-01_at_15.09.31.png
 content: >-
-  Kranie est une plateforme de mise en relation pour de l'achat ou la location de materiel de chantier
+  Kranie est une plateforme de mise en relation pour de l'achat ou la location
+  de materiel de chantier
 
   Chaque personne qui visite la plateform peut chercher une machine et envoyer une demande de résrvation pour cette machine
 

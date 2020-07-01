@@ -1,23 +1,33 @@
 ---
+canonical_url: false
 title: MasterChefJunior - casting platform
 published: true
-tags: ['Ruby', 'Rails', 'Vue.js', 'Javascript','Vuetify', 'Bootstrap', 'HTML', 'CSS', 'Heroku', 'Postgres']
-lang: 'en'
-images:
-  - image: ../images/mcjunior1.png
-  - image: ../images/mcjunior2.png
-  - image: ../images/mcjunior3.png
-  - image: ../images/mcjunior4.png
-  - image: ../images/mcjunior5.png
-  - image: ../images/mcjunior6.png
-  - image: ../images/mcjunior7.png
-  - image: ../images/mcjunior8.png
-canonical_url: false
-description: 'Lorem ipsum'
-website: 'www.masterchefmaroc.ma'
-date: '7/2018'
+lang: en
 order: 3
-
+tags:
+  - Ruby
+  - Rails
+  - Vue.js
+  - Javascript
+  - Vuetify
+  - Bootstrap
+  - HTML
+  - CSS
+  - Heroku
+  - Postgres
+website: www.masterchefmaroc.ma
+date: 7/2018
+description: Lorem ipsum
+featured_image: https://res.cloudinary.com/mjedi/image/upload/v1593605887/portfolio/mcjunior1.png
+images:
+  - image: https://res.cloudinary.com/mjedi/image/upload/v1593605887/portfolio/mcjunior1.png
+  - image: https://res.cloudinary.com/mjedi/image/upload/v1593605891/portfolio/mcjunior2.png
+  - image: https://res.cloudinary.com/mjedi/image/upload/v1593605895/portfolio/mcjunior3.png
+  - image: https://res.cloudinary.com/mjedi/image/upload/v1593605895/portfolio/mcjunior4.png
+  - image: https://res.cloudinary.com/mjedi/image/upload/v1593605895/portfolio/mcjunior5.png
+  - image: https://res.cloudinary.com/mjedi/image/upload/v1593605896/portfolio/mcjunior6.png
+  - image: https://res.cloudinary.com/mjedi/image/upload/v1593605896/portfolio/mcjunior7.png
+  - image: https://res.cloudinary.com/mjedi/image/upload/v1593605896/portfolio/mcjunior8.png
 ---
 MasterChef Junior is a local tv show that was looking to streamline their casting process by building an online platform.
 

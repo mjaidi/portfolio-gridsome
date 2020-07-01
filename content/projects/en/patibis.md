@@ -19,11 +19,9 @@ images:
   - image: https://res.cloudinary.com/mjedi/image/upload/v1593605893/portfolio/patibis6.png
   - image: https://res.cloudinary.com/mjedi/image/upload/v1593605891/portfolio/patibis8.png
   - image: https://res.cloudinary.com/mjedi/image/upload/v1593605892/portfolio/patibis9.png
+content: >-
+  Patibis pastry management system is my first dev project. It was built using the DBMS platform Filemaker Pro.
+
+
+  It is an Enterprise Resource Planning system for managing a pastry operation. It handles recipes (bill of materials), costing, purchasing management, sales management (quotes, invoices and payments), production tracking, inventory management, customer management and provides detailed sales reports.
 ---
-
-Patibis pastry management system is my first dev project. It was built using the DBMS platform Filemaker Pro.
-
-
-It is an Enterprise Resource Planning system for managing a pastry operation. It handles recipes (bill of materials), costing, purchasing management, sales management (quotes, invoices and payments), production tracking, inventory management, customer management and provides detailed sales reports.
-
-

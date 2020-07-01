@@ -25,14 +25,12 @@ images:
   - image: https://res.cloudinary.com/mjedi/image/upload/v1593605888/portfolio/vestizy4.png
   - image: https://res.cloudinary.com/mjedi/image/upload/v1593605892/portfolio/vestizy5.png
   - image: https://res.cloudinary.com/mjedi/image/upload/v1593605895/portfolio/vestizy6.png
+content: >-
+  Vestizy is a 2 part project:
+
+
+  First, Vestizy is a commercial website showcasing the expertise and work of a team of young real-estate entrepreneurs who help people find, renovate, and rent real-estate. For this first part there is a single landing page with a corresponding custom CMS to manage content and SEO.
+
+
+  Second, there will be a members area where customers will have access to real time information about their project.
 ---
-
-Vestizy is a 2 part project:
-
-
-First, Vestizy is a commercial website showcasing the expertise and work of a team of young real-estate entrepreneurs who help people find, renovate, and rent real-estate. For this first part there is a single landing page with a corresponding custom CMS to manage content and SEO.
-
-
-Second, there will be a members area where customers will have access to real time information about their project.
-
-

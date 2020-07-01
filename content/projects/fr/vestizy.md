@@ -27,10 +27,10 @@ description: "Lorem ipsum"
 website: "vestizy1.herokuapp.com"
 date: "1/2019"
 order: 7
+content: >-
+  Vestizy est un projet en deux parties :
+
+  Tout d'abord, Vestizy est un site web commercial qui met en valeur l'expertise et le travail d'une équipe de jeunes entrepreneurs en immobilier qui aident les gens à trouver, rénover et louer un bien immobilier. Pour cette première partie, il y a une page d'accueil unique avec un CMS personnalisé correspondant pour gérer le contenu et le référencement.
+
+  Deuxièmement, il y aura une zone réservée aux membres où les clients auront accès à des informations en temps réel sur leur projet.
 ---
-
-Vestizy est un projet en deux parties :
-
-Tout d'abord, Vestizy est un site web commercial qui met en valeur l'expertise et le travail d'une équipe de jeunes entrepreneurs en immobilier qui aident les gens à trouver, rénover et louer un bien immobilier. Pour cette première partie, il y a une page d'accueil unique avec un CMS personnalisé correspondant pour gérer le contenu et le référencement.
-
-Deuxièmement, il y aura une zone réservée aux membres où les clients auront accès à des informations en temps réel sur leur projet.

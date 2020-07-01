@@ -19,8 +19,6 @@ images:
   - image: https://res.cloudinary.com/mjedi/image/upload/v1593605893/portfolio/stroc4.png
   - image: https://res.cloudinary.com/mjedi/image/upload/v1593605891/portfolio/stroc6.png
   - image: https://res.cloudinary.com/mjedi/image/upload/v1593605891/portfolio/stroc7.png
+content: >-
+  Stroc is a corporate website showcasing the expertise of one of the largest construction companies in Morocco. It is a static site available in French and English with a blog and a recruitment area.
 ---
-
-Stroc is a corporate website showcasing the expertise of one of the largest construction companies in Morocco. It is a static site available in French and English with a blog and a recruitment area.
-
-

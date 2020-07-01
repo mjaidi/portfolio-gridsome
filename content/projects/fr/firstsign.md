@@ -15,6 +15,6 @@ description: "Site web commercial pour first sign"
 website: "www.firstsign.ma"
 date: "11/2019"
 order: 1
+content: >-
+  First Sign est un site web commercial qui met en valeur l'expertise et le travail d'un spécialiste des enseignes, façades et agencements en tout genre.
 ---
-
-First Sign est un site web commercial qui met en valeur l'expertise et le travail d'un spécialiste des enseignes, façades et agencements en tout genre.

@@ -16,6 +16,6 @@ description: "Lorem ipsum"
 website: "www.stroc.com"
 date: "4/2019"
 order: 8
+content: >-
+  Stroc est un site corporatif qui met en valeur l'expertise d'une des plus grandes entreprises de construction au Maroc. C'est un site statique disponible en français et en anglais avec un blog et un espace recrutement.
 ---
-
-Stroc est un site corporatif qui met en valeur l'expertise d'une des plus grandes entreprises de construction au Maroc. C'est un site statique disponible en français et en anglais avec un blog et un espace recrutement.

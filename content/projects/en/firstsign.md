@@ -21,9 +21,6 @@ images:
   - image: https://res.cloudinary.com/mjedi/image/upload/v1593605886/portfolio/fs3.png
   - image: https://res.cloudinary.com/mjedi/image/upload/v1593605890/portfolio/fs4.png
   - image: https://res.cloudinary.com/mjedi/image/upload/v1593605888/portfolio/fs5.png
+content: >-
+  First Sign is a commercial website showcasing the expertise and work of a specialists of signs, facades and interior design construcion.
 ---
-
-First Sign is a commercial website showcasing the expertise and work of a specialists of signs, facades and interior design construcion.
-
-
-

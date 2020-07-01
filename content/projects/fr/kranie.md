@@ -1,7 +1,7 @@
 ---
-title: Kranie -  construction equipment platform
+title: Kranie - plateforme materiel de construction
 published: true
-lang: en
+lang: fr
 order: 0
 tags:
   - Ruby on Rails
@@ -14,17 +14,13 @@ website: https://www.kranie.com
 date: 04/2020
 featured_image: https://res.cloudinary.com/mjedi/image/upload/v1593609567/portfolio/Screen_Shot_2020-07-01_at_15.09.31.png
 content: >-
-  Kranie is a platform that helps companies or individual rent or buy
-  construction equipment for their projects.
+  Kranie est une plateforme de mise en relation pour de l'achat ou la location de materiel de chantier
 
+  Chaque personne qui visite la plateform peut chercher une machine et envoyer une demande de résrvation pour cette machine
 
-  The platform allows all to search for different types of construction equipment and send a RFP to Kranie
+  L'équipe kranie traite toutes les demandes et la plateform suggère le meilleur fournisseur disponible parmi la liste des fournisseurs parteenaires pour chaque demandes
 
-
-  Kranie then treats each RFP individually - the platform suggests available supplier machines and allows the Kranie team to send several proposals to the customers request
-
-
-  Finally, once the proposals are accepted by the customer then supplier and customer are given each others coordinates
+  Ensuite plusieurs propositions sont envoyées au client et une fois celle-ci validé le client et le fournisseur sont mis en relation
 images:
   - image: https://res.cloudinary.com/mjedi/image/upload/v1593609567/portfolio/Screen_Shot_2020-07-01_at_15.09.31.png
   - image: https://res.cloudinary.com/mjedi/image/upload/v1593609566/portfolio/Screen_Shot_2020-07-01_at_15.09.43.png

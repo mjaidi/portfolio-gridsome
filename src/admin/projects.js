@@ -1,10 +1,10 @@
 import { seo } from "./seo";
 import { projectFields } from "./projectFields";
 
-export const projectsEn = {
-  label: "Projets English",
-  name: "projects_en",
-  folder: "content/projects/en",
+export const projects = {
+  label: "Projets",
+  name: "projects",
+  folder: "content/projects",
   create: true,
   fields: projectFields,
 };

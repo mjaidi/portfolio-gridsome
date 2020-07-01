@@ -1,8 +1,7 @@
 import CMS from "netlify-cms-app";
 import cloudinary from "netlify-cms-media-library-cloudinary";
 import { home } from "./home";
-import { projectsEn } from "./projectsEn";
-import { projectsFr } from "./projectsFr";
+import { projects } from "./projects";
 
 CMS.registerMediaLibrary(cloudinary);
 
@@ -24,6 +23,6 @@ CMS.init({
       },
     },
     public_folder: "/assets",
-    collections: [home, projectsEn, projectsFr],
+    collections: [home, projects],
   },
 });

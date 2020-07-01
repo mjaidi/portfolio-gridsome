@@ -1,22 +1,30 @@
 ---
+canonical_url: false
 title: Vestizy - commercial website
 published: true
-tags: ['Ruby', 'Rails', 'Javascript', 'Bootstrap', 'HTML', 'CSS', 'Heroku', 'Postgres']
-lang: 'en'
-images:
-  - image: ../images/vestizy.png
-  - image: ../images/vestizy1.png
-  - image: ../images/vestizy2.png
-  - image: ../images/vestizy3.png
-  - image: ../images/vestizy4.png
-  - image: ../images/vestizy5.png
-  - image: ../images/vestizy6.png
-canonical_url: false
-description: "Lorem ipsum"
-website: 'vestizy1.herokuapp.com'
-date: '1/2019'
+lang: en
 order: 7
-
+tags:
+  - Ruby
+  - Rails
+  - Javascript
+  - Bootstrap
+  - HTML
+  - CSS
+  - Heroku
+  - Postgres
+website: vestizy1.herokuapp.com
+date: 1/2019
+description: Lorem ipsum
+featured_image: https://res.cloudinary.com/mjedi/image/upload/v1593605886/portfolio/vestizy1.png
+images:
+  - image: https://res.cloudinary.com/mjedi/image/upload/v1593605886/portfolio/vestizy1.png
+  - image: https://res.cloudinary.com/mjedi/image/upload/v1593605886/portfolio/vestizy1.png
+  - image: https://res.cloudinary.com/mjedi/image/upload/v1593605890/portfolio/vestizy2.png
+  - image: https://res.cloudinary.com/mjedi/image/upload/v1593605888/portfolio/vestizy3.png
+  - image: https://res.cloudinary.com/mjedi/image/upload/v1593605888/portfolio/vestizy4.png
+  - image: https://res.cloudinary.com/mjedi/image/upload/v1593605892/portfolio/vestizy5.png
+  - image: https://res.cloudinary.com/mjedi/image/upload/v1593605895/portfolio/vestizy6.png
 ---
 
 Vestizy is a 2 part project:

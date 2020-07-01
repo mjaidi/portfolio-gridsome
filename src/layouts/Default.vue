@@ -9,10 +9,17 @@
       :opacity="1"
       color="#E5BE24"
     ></loading>
-    <Sidebar v-on:currentLanguage="currentLanguage" :class="{visible: !isMobile && activeSidebar}" />
+    <Sidebar
+      v-on:currentLanguage="currentLanguage"
+      :class="{ visible: !isMobile && activeSidebar }"
+    />
     <MobileMenu v-on:currentLanguage="currentLanguage" v-show="isMobile" />
     <v-btn
-      :class="{'btn-sidebar':true, 'btn-close-sidebar': true, visible: (!isMobile && activeSidebar)}"
+      :class="{
+        'btn-sidebar': true,
+        'btn-close-sidebar': true,
+        visible: !isMobile && activeSidebar,
+      }"
       @click="toggleSidebar()"
     >
       <v-icon>mdi-chevron-left</v-icon>
@@ -26,7 +33,7 @@
       <v-icon>mdi-chevron-right</v-icon>
     </v-btn>
 
-    <main :class="{offsetWidth: !isMobile && activeSidebar}">
+    <main :class="{ offsetWidth: !isMobile && activeSidebar, offset: true }">
       <slot
         v-bind:lang="lang"
         v-bind:isMobile="isMobile"
@@ -34,7 +41,11 @@
         id="main"
       ></slot>
     </main>
-    <v-btn class="btn-sidebar btn-scroll-sidebar" @click="scrollTop()" v-show="!isMobile">
+    <v-btn
+      class="btn-sidebar btn-scroll-sidebar"
+      @click="scrollTop()"
+      v-show="!isMobile"
+    >
       <v-icon>mdi-chevron-up</v-icon>
     </v-btn>
   </v-app>
@@ -53,13 +64,13 @@ export default {
   components: {
     Sidebar,
     MobileMenu,
-    Loading
+    Loading,
   },
   data: () => ({
     lang: "en",
     isMobile: false,
     activeSidebar: true,
-    isLoading: true
+    isLoading: true,
   }),
 
   mounted() {
@@ -94,13 +105,16 @@ export default {
     },
     currentLanguage(lang) {
       this.lang = lang;
-    }
-  }
+    },
+  },
 };
 </script>
 
 <style>
 .offsetWidth {
   margin-left: 220px;
+}
+.offset {
+  transition: all 0.3s ease-in;
 }
 </style>

@@ -72,6 +72,7 @@ export default {
     this.projects = this.$static.projects.edges.filter(
       e => e.node.lang === this.lang
     );
+    console.log(this.$static.projects)
   }
 };
 </script>
@@ -89,6 +90,9 @@ query Projects{
         website
         date
         order
+        images {
+          image
+        }
         tags {
           id
         }

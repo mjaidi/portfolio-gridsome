@@ -5,7 +5,7 @@
     <div v-if="activeProject.images">
       <ClientOnly>
         <LightGallery
-          :images="activeProject.images.map((i) => i.image.src)"
+          :images="activeProject.images.map((i) => i.image)"
           :index="index"
           :disable-scroll="true"
           @close="index = null"
@@ -29,7 +29,7 @@
             >
               <v-icon @click="index = i" class="img-expand">open_with</v-icon>
 
-              <img :src="image.image.src" alt class="project-dialog-image" />
+              <img :src="image.image" alt class="project-dialog-image" />
             </v-layout>
           </v-sheet>
         </v-carousel-item>

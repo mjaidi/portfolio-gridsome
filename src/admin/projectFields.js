@@ -33,7 +33,7 @@ export const projectFields = [
     label: "Has URL ?",
     name: "caonnonical_url",
     widget: "boolean",
-    default: false,
+    required: false,
   },
   {
     label: "Website",

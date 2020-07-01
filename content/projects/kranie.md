@@ -4,7 +4,8 @@ published: true
 lang: en
 order: 0
 tags:
-  - Ruby on Rails
+  - Ruby
+  - Rails
   - HTML
   - CSS
   - Javascript

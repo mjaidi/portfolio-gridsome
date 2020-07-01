@@ -5,7 +5,7 @@ import { projectsEn } from "./projectsEn";
 import { projectsFr } from "./projectsFr";
 
 CMS.registerMediaLibrary(cloudinary);
-console.log(process.env.CLOUDINARY_CLOUD_NAME);
+console.log(process.env.GRIDSOME_CLOUDINARY_CLOUD_NAME);
 
 CMS.init({
   config: {
@@ -17,8 +17,8 @@ CMS.init({
     media_library: {
       name: "cloudinary",
       config: {
-        cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
-        api_key: process.env.CLOUDINARY_API_KEY,
+        cloud_name: process.env.GRIDSOME_CLOUDINARY_CLOUD_NAME,
+        api_key: process.env.GRIDSOME_CLOUDINARY_API_KEY,
       },
       settings: {
         autoFilename: true,

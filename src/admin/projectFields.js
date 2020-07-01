@@ -1,6 +1,4 @@
-import { seo } from "./seo";
 export const projectFields = [
-  ...seo,
   {
     label: "Title",
     name: "title",

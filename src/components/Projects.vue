@@ -93,9 +93,6 @@ query Projects{
           id
         }
         description
-        images {
-          image (width: 1000)
-        }
         ...on Project {
             id
             title

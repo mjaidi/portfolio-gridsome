@@ -10,7 +10,7 @@ tags:
   - Javascript
   - Heroku
 caonnonical_url: true
-website: https://www.kranie.com
+website: www.kranie.com
 date: 04/2020
 featured_image: https://res.cloudinary.com/mjedi/image/upload/v1593609567/portfolio/Screen_Shot_2020-07-01_at_15.09.31.png
 content: >-

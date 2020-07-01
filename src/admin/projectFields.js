@@ -1,39 +1,59 @@
 import { seo } from "./seo";
-
 export const projectFields = [
   ...seo,
   {
-    label: "Statut",
-    name: "status",
-    widget: "select",
-    options: ["Publié", "Mis en avant", "En cours"],
-    default: "Publié",
-  },
-  {
-    label: "Date",
-    name: "date",
-    widget: "date",
-    default: new Date(),
-  },
-  {
-    label: "Catégorie",
-    name: "category",
-    widget: "relation",
-    required: true,
-    collection: "categories",
-    searchFields: ["title"],
-    valueField: "title",
-  },
-  {
-    label: "Connéxion Obligatoire?",
-    name: "needs_login",
-    widget: "boolean",
-  },
-  {
-    label: "Titre",
+    label: "Title",
     name: "title",
     widget: "string",
     required: true,
+  },
+  {
+    label: "Publié ?",
+    name: "published",
+    widget: "boolean",
+    default: true,
+  },
+  {
+    label: "Language",
+    name: "lang",
+    widget: "select",
+    options: ["fr", "en"],
+  },
+  {
+    label: "Position",
+    name: "order",
+    widget: "number",
+    required: true,
+  },
+  {
+    label: "Tags",
+    name: "tags",
+    widget: "list",
+    required: true,
+  },
+  {
+    label: "Has URL ?",
+    name: "caonnonical_url",
+    widget: "boolean",
+    default: false,
+  },
+  {
+    label: "Website",
+    name: "website",
+    widget: "string",
+    required: false,
+  },
+  {
+    label: "When?",
+    name: "date",
+    widget: "string",
+    required: false,
+  },
+  {
+    label: "Short Description",
+    name: "description",
+    widget: "string",
+    required: false,
   },
   {
     label: "Image de couverture",
@@ -42,52 +62,18 @@ export const projectFields = [
     required: false,
   },
   {
-    label: "Sections",
-    name: "sections",
+    label: "Content",
+    name: "content",
+    widget: "markdown",
+    required: false,
+  },
+  {
+    label: "Images",
+    name: "images",
     widget: "list",
     fields: [
-      { label: "Titre", name: "title", widget: "string", required: true },
-      {
-        label: "Contenu",
-        name: "text",
-        widget: "markdown",
-        required: false,
-      },
-      {
-        label: "Titre Vidéo",
-        name: "video_title",
-        widget: "string",
-        hint: "Mettre le titre de la vidéo que vous voulez intégrer",
-        required: false,
-      },
-      {
-        label: "Vidéo",
-        name: "video",
-        widget: "string",
-        hint: "Mettre le lien youtube de la vidéo que vous voulez intégrer",
-        required: false,
-      },
-      {
-        label: "Téléchargements",
-        name: "downloads",
-        widget: "list",
-        required: false,
-        fields: [
-          { label: "Titre", name: "title", widget: "string" },
-          { label: "Déscription", name: "description", widget: "text" },
-          { label: "Document PDF", name: "document_pdf", widget: "file" },
-        ],
-      },
-      {
-        label: "Foire aux questions",
-        name: "faq",
-        widget: "list",
-        required: false,
-        fields: [
-          { label: "Question", name: "question", widget: "string" },
-          { label: "Réponse", name: "answer", widget: "text" },
-        ],
-      },
+      { label: "Image", name: "image", widget: "image", required: true },
+      { label: "Name", name: "name", widget: "string", required: false },
     ],
   },
 ];

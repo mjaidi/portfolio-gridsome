@@ -5,6 +5,7 @@ import { projectsEn } from "./projectsEn";
 import { projectsFr } from "./projectsFr";
 
 CMS.registerMediaLibrary(cloudinary);
+console.log(process.env.CLOUDINARY_CLOUD_NAME);
 
 CMS.init({
   config: {
